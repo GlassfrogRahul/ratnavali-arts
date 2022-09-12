@@ -1,0 +1,114 @@
+.home-navbar.navbar.navbar-expand-lg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: $z-index-navbar;
+    padding-top: 2rem;
+    .container-lg{
+        position: relative;
+        .navbar-brand{
+            
+            img{
+                width: 15rem;
+                object-fit: cover;
+                height: auto;
+            }
+        }
+        .navbar-toggler{
+    
+        }
+        .navbar-collapse{
+            flex-grow: 1;
+            padding-top: 2rem;
+            max-width: 80rem;
+            ul.navbar-nav{
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 2rem 1rem;
+                border-bottom: 1px solid #ffffff;
+                width: 100%;
+                li.nav-item{
+                    a.nav-link{
+                        font-size: 1.6rem;
+                        text-transform: uppercase;
+                        color: #fff;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+.navbar:not(.navbar-expand-lg){
+    position: relative;
+    z-index: $z-index-navbar;
+    padding-top: 2rem;
+    background-color: $color-light-brown;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    .container-lg{
+        .navbar-brand{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            img{
+                width: 15rem;
+                object-fit: cover;
+                height: auto;
+            }
+        }
+        .navbar-toggler{
+            border: 0;
+            display: flex;
+            align-items: center;
+            img{
+                width: 3.5rem;
+                height: 3.5rem;
+                object-fit: contain;
+                object-position: center center;
+            }
+            span{
+                font-weight: 500;
+                margin-left: .8rem;
+                color: $color-brown;
+
+            }
+        }
+        .navbar-collapse{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #F5F3F3;
+            display: block;
+            width: 100%;
+            overflow: hidden;
+
+            &.collapse{
+                height: 0;
+                &.show{
+                    height: auto;
+                }
+            }
+            ul.navbar-nav{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                li.nav-item{
+                    a.nav-link{
+                        color: $color-brown;
+                        text-transform: uppercase;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}
