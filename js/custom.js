@@ -11,3 +11,7 @@ function pauseVideo(btn) {
     btn.parentElement.querySelector('.play').classList.remove('active');
     btn.parentElement.querySelector('.pause').classList.add('active');
 }
+
+function toggleNavbar() {
+    document.querySelector('[data-target="#navbarSupportedContent"]').click()
+}
