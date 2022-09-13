@@ -136,6 +136,9 @@ img {
     display: flex;
     align-items: center; }
     @media only screen and (max-width: 62em) {
+      .navbar:not(.navbar-expand-lg) .container-lg .navbar-toggler:focus {
+        outline: none; } }
+    @media only screen and (max-width: 62em) {
       .navbar:not(.navbar-expand-lg) .container-lg .navbar-toggler {
         position: absolute;
         top: 50%;
@@ -170,7 +173,8 @@ img {
             width: 3rem;
             height: 1.5px;
             background-color: #A88A5F;
-            position: relative; }
+            position: absolute;
+            margin: 0; }
           .navbar:not(.navbar-expand-lg) .container-lg .navbar-toggler span::before {
             top: -.8rem; }
           .navbar:not(.navbar-expand-lg) .container-lg .navbar-toggler span::after {
