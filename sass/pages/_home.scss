@@ -30,6 +30,10 @@ section.banner{
 
     z-index: 1;
 
+    @media only screen and (max-width: 62em) {
+        min-height: auto;
+    }
+
     img{
         position: absolute;
         top: 0;
@@ -38,6 +42,10 @@ section.banner{
         width: 100%;
         object-fit: cover;
         z-index: 2;
+
+        @media only screen and (max-width: 62em) {
+            position: relative;
+        }
     }
 
     h1,h2{
@@ -51,12 +59,24 @@ section.banner{
         align-items: center;
         justify-content: center;
 
+        @media only screen and (max-width: 62em) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
         &::before,&::after{
             content: '';
             height: .25rem;
             width: 8rem;
             background-color: #fff;
             margin: 0 1.5rem;
+            @media only screen and (max-width: 62em) {
+                width: 4rem;
+            }
         }
 
     }
@@ -97,16 +117,31 @@ section.heading-box{
 section.two-column_image-overflow{
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    @media only screen and (max-width: 36em) {
+        padding-top: 0;
+    }
+
+    @media only screen and (max-width: 62em) {
+        background-color: #fff;
+    }
+
     .overflow-image{
         width: 100%;
         height: auto;
         object-fit: cover;
         transform: translateX(12rem);
         margin-top: 1.4rem;
+        margin-top: auto;
+        @media only screen and (max-width: 75em) {
+            transform: translateX(0);
+        }
     }
 
     h2{
-
+        @media only screen and (max-width: 62em) {
+            margin-top: 2rem;
+        }
     }
 
     h4{
@@ -117,6 +152,15 @@ section.two-column_image-overflow{
         padding: 4rem;
         border-radius: 0;
         border: 0;
+        @media only screen and (max-width: 62em) {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        @media only screen and (max-width: 36em) {
+            padding: 0;
+        }
+
         p{
             font-size: 1.8rem;
             color: $color-gray;
@@ -139,6 +183,10 @@ section.card-text-box{
         border: 0;
         border-radius: 0;
         position: relative;
+
+        @media only screen and (max-width: 62em) {
+            margin-top: 0;
+        }
 
         &::after{
             content: '';
@@ -175,6 +223,14 @@ section.card-text-box{
 }
 
 section.two-column{
+
+    div:not(.position-relative){
+        @media only screen and (max-width: 49em) {
+            order: -1;
+        }
+        
+    }
+
     p{
         padding: 3rem 5rem;
         margin-top: 8rem;
@@ -182,6 +238,19 @@ section.two-column{
         font-size: 1.6rem;
         line-height: 1.6;
         color: $color-gray;
+        margin-bottom: 0;
+
+        @media only screen and (max-width: 62em) {
+            margin-top: 4rem;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3rem 0;
+        }
+
+        @media only screen and (max-width: 36em) {
+            width: 100%;
+        }
 
         &::before{
             content: '';
@@ -191,6 +260,10 @@ section.two-column{
             height: 2px;
             width: 5rem;
             background-color: $color-brown;
+            @media only screen and (max-width: 62em) {
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
 
@@ -200,6 +273,22 @@ section.two-column{
         min-height: 40rem;
         width: calc(100% + 30px);
         object-fit: cover;
+        height: auto;
+        @media only screen and (max-width: 62em) {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            min-height: auto;
+            
+            display: block;
+        }
+
+        @media only screen and (max-width: 36em) {
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            margin-right: -15px;
+
+        }
     }
 
     a{
@@ -210,6 +299,20 @@ section.two-column{
         justify-content: center;
         position: relative;
         height: 100%;
+
+        @media only screen and (max-width: 62em) {
+            padding-top: 1.6rem;
+            padding-bottom: 1.6rem;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media only screen and (max-width: 36em) {
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            margin-right: -15px;
+        }
 
         span{
             font-size: 1.8rem;
@@ -283,6 +386,13 @@ section.video-section{
 }
 
 section.images-grid{
+
+    div.col-lg-4{
+        @media only screen and (max-width: 36em) {
+            order: -1;
+        }
+    }
+
     img{
         margin-left: -15px;
         margin-right: -15px;
@@ -375,10 +485,14 @@ section.service-section{
         position: relative;
         width: max-content;
         margin-bottom: 3rem;
+        max-width: 100%;
         img{
             max-width: 38rem;
             object-fit: cover;
             object-position: center center;
+            @media only screen and (max-width: 36em) {
+                max-width: 100%;
+            }
         }
         h3{
             position: absolute;
@@ -404,18 +518,27 @@ footer.footer{
         justify-content: center;
         padding-bottom: 3rem;
         border-bottom: 1.5px solid $color-brown;
+        @media only screen and (max-width: 62em) {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 1.8rem;
+        }
         li.footer-nav-item{
             list-style: none;
             padding: 0 1.5rem;
             &:not(:last-child) {
                 border-right: 2px solid $color-brown;
+                @media only screen and (max-width: 62em) {
+                    border-right: 0px;
+                    margin-bottom: .8rem;
+                }
             }
             a.footer-nav-link{
                 font-size: 1.8rem;
                 text-transform: uppercase;
                 letter-spacing: .15rem;
                 color: $color-brown;
-
+                
             }
         }
     }

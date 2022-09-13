@@ -7,10 +7,19 @@
     font-size: 5.6rem;
     font-family: $font-playfair;
     letter-spacing: .2rem;
+    @media only screen and (max-width: 62em) {
+        font-size: 4.6rem;
+    }
+    @media only screen and (max-width: 36em) {
+        font-size: 3.8rem;
+    }
 }
 
 .h3{
     font-size: 4rem;
     font-family: $font-playfair;
     letter-spacing: .15rem;
+    @media only screen and (max-width: 36em) {
+        font-size: 2.8rem;
+    }
 }

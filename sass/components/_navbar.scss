@@ -50,12 +50,23 @@
     background-color: $color-light-brown;
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
+    @media only screen and (max-width: 62em) {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
     .container-lg{
         .navbar-brand{
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
+
+            @media only screen and (max-width: 62em) {
+                position: relative;
+                top: 0;
+                transform: translateX(-50%);
+            }
+
             img{
                 width: 15rem;
                 object-fit: cover;
@@ -66,16 +77,60 @@
             border: 0;
             display: flex;
             align-items: center;
+
+            @media only screen and (max-width: 62em) {
+                position: absolute;
+                top: 50%;
+                right: 2rem;
+                transform: translateY(-50%);
+            }
+
             img{
                 width: 3.5rem;
                 height: 3.5rem;
                 object-fit: contain;
                 object-position: center center;
+                @media only screen and (max-width: 62em)  {
+                    display: none;
+                }
             }
             span{
                 font-weight: 500;
                 margin-left: .8rem;
                 color: $color-brown;
+
+                @media only screen and (max-width: 62em)  {
+                    margin-left: 0;
+                    position: relative;
+                    font-size: 0px;
+                    width: 3rem;
+                    height: 1.5px;
+                    background-color: $color-brown;
+                    border-radius: 1rem;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    
+
+                    &::before,&::after{
+                        content: '';
+                        width: 3rem;
+                        height: 1.5px;
+                        background-color: $color-brown;
+                        position: relative;
+                    }
+
+                    &::before{
+                        top: -.8rem;
+                    }
+
+                    &::after{
+                        top: .8rem;
+                    }
+
+                }
 
             }
         }
