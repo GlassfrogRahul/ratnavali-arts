@@ -361,6 +361,9 @@ section.banner {
   @media only screen and (max-width: 62em) {
     section.banner {
       min-height: auto; } }
+  @media only screen and (max-width: 36em) {
+    section.banner {
+      height: 50rem; } }
   section.banner img {
     position: absolute;
     top: 0;
@@ -380,7 +383,8 @@ section.banner {
     letter-spacing: .2rem;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    text-align: center; }
     @media only screen and (max-width: 62em) {
       section.banner h1, section.banner h2 {
         position: absolute;
@@ -512,6 +516,11 @@ section.card-text-box {
 @media only screen and (max-width: 49em) {
   section.two-column div:not(.position-relative) {
     order: -1; } }
+
+@media only screen and (max-width: 36em) {
+  section.two-column .mx {
+    margin-left: 15px;
+    margin-right: 15px; } }
 
 section.two-column p {
   padding: 3rem 5rem;
