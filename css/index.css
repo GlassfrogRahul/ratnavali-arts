@@ -333,7 +333,9 @@ img {
         font-size: 1.6rem; }
 
 body.page.home .home-video_section {
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
   z-index: 1; }
   body.page.home .home-video_section::after {
     content: '';
@@ -474,7 +476,11 @@ section.card-text-box {
     margin-top: -5rem;
     border: 0;
     border-radius: 0;
-    position: relative; }
+    position: relative;
+    min-height: 100%; }
+    @media only screen and (min-width: 87.5em) {
+      section.card-text-box .card.card-text {
+        padding: 7rem 10rem 5rem; } }
     @media only screen and (max-width: 62em) {
       section.card-text-box .card.card-text {
         margin-top: 0; } }
@@ -681,33 +687,34 @@ section.contact-section {
     color: #545454;
     line-height: 1.8; }
 
-section.service-section h1 {
-  padding: 1.2rem;
-  background-color: #EBE7E6; }
-
-section.service-section .service-card {
-  position: relative;
-  width: max-content;
-  margin-bottom: 3rem;
-  max-width: 100%; }
-  section.service-section .service-card img {
-    max-width: 38rem;
-    object-fit: cover;
-    object-position: center center; }
-    @media only screen and (max-width: 36em) {
-      section.service-section .service-card img {
-        max-width: 100%; } }
-  section.service-section .service-card h3 {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 3rem;
-    background-color: rgba(168, 138, 95, 0.5);
-    transform: translateY(-50%);
-    font-size: 2rem;
-    color: #fff; }
+section.service-section {
+  background-color: #fff; }
+  section.service-section h1 {
+    padding: 1.2rem;
+    background-color: #EBE7E6; }
+  section.service-section .service-card {
+    position: relative;
+    width: max-content;
+    margin-bottom: 3rem;
+    max-width: 100%; }
+    section.service-section .service-card img {
+      max-width: 38rem;
+      object-fit: cover;
+      object-position: center center; }
+      @media only screen and (max-width: 36em) {
+        section.service-section .service-card img {
+          max-width: 100%; } }
+    section.service-section .service-card h3 {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 3rem;
+      background-color: rgba(168, 138, 95, 0.5);
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: #fff; }
 
 footer.footer {
   background-color: #EBE7E6;

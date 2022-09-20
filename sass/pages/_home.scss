@@ -1,6 +1,8 @@
 body.page.home{
     .home-video_section{
-        position: relative;
+        position: sticky;
+        top: 0;
+        left: 0;
         z-index: 1;
         &::after{
             content: '';
@@ -183,6 +185,11 @@ section.card-text-box{
         border: 0;
         border-radius: 0;
         position: relative;
+        min-height: 100%;
+
+        @media only screen and (min-width: 87.5em) {
+            padding: 7rem 10rem 5rem;
+        }
 
         @media only screen and (max-width: 62em) {
             margin-top: 0;
@@ -219,6 +226,11 @@ section.card-text-box{
 
     .card-image-row{
         height: 100%;
+        img{
+            // margin: auto;
+            // max-width: 35rem;
+            // display: block;
+        }
     }
 }
 
@@ -475,7 +487,7 @@ section.contact-section{
 }
 
 section.service-section{
-    
+    background-color: #fff;
     h1{
         padding: 1.2rem;
         background-color: $color-light-brown;
