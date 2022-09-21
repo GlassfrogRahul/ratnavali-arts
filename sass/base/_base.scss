@@ -37,6 +37,12 @@ section{
 
 a,a:hover,a:focus{
     text-decoration: none;
+    transition: .3s;
+    perspective: 10000px;
+}
+
+a:hover{
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
 
 img{

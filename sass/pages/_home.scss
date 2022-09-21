@@ -193,6 +193,33 @@ section.card-text-box{
         position: relative;
         min-height: 100%;
 
+        &.card-text-lg{
+            &::after{
+                display: none;
+            }
+            img{
+                width: 5rem;
+                height: 5rem;
+            }
+            .btn{
+                border: 0;
+                background-color: $color-brown;
+                font-size: 1.4rem;
+                padding: 0.6rem 1rem;
+                display: flex;
+                align-items: center;
+                color: #FFF;
+                cursor: pointer;
+                &::before{
+                    content: '';
+                    height: 1.3px;
+                    width: 2rem;
+                    background-color: #FFF;
+                    margin-right: 1rem;
+                }
+            }
+        }
+
         @media only screen and (min-width: 87.5em) {
             padding: 7rem 10rem 5rem;
         }
@@ -458,6 +485,13 @@ section.form-section{
         color: $color-brown;
         cursor: pointer;
 
+        &.-u-bg-brown{
+            color: #fff;
+            &::before{
+                background-color: #fff;
+            }
+        }
+
         &::before{
             content: '';
             height: 1px;
@@ -573,5 +607,126 @@ footer.footer{
         font-size: 1.6rem;
         color: $color-brown;
         letter-spacing: .15rem;
+    }
+}
+
+
+section.login-section{
+    
+
+    background-image: url("./../../asssets/images/rough-to-stone.png");
+    background-size: cover;
+
+    padding: 10rem 0;
+    
+    .login-form{
+        border: 1px solid $color-brown;
+        background-color: $color-light-brown;
+        padding: 5rem 3rem 10rem 3rem;
+
+        @media only screen and (max-width: 32em) {
+            margin-right: 0;
+            margin-left: 0;
+            padding: 5rem 0rem 10rem;
+        }
+
+        img{
+            width: 3rem;
+            height: auto;
+        }
+
+        h2{
+            color: $color-brown;
+            margin-bottom: 5rem;
+        }
+
+        label{
+            font-size: 1.2rem;
+        }
+
+        a{
+            color: $color-brown;
+            font-size: 1.2rem;
+            text-decoration: underline;
+        }
+
+        p.text-danger{
+            font-size: 1.2rem;
+        }
+
+        p.p3{
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+}
+
+
+section.appointments-section{
+    padding: 10rem 0;
+    h1{
+        color: $color-brown;
+        margin-bottom: 8rem;
+        text-align: center;
+    }
+
+    .card{
+        margin-bottom: 3rem;
+        padding: 3rem;
+
+        max-width: 40rem;
+
+        margin-left: auto;
+        margin-right: auto;
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            width: 3rem;
+        }
+
+        img:nth-child(2){
+            width: 15rem;
+            height: auto;
+        }
+
+        h2{
+            color: #000;
+        }
+
+        h3{
+            color: $color-gray;
+        }
+
+        p{
+            font-weight: bold;
+            color: $color-brown;
+            font-size: 1.4rem;
+        }
+
+        a{
+            background-color: $color-brown;
+            color: #fff;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+
+section.banner-lg{
+    position: relative;
+    max-height: 60rem;
+    h1{
+        position: absolute;
+        padding: 3rem;
+        top: 10rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        text-align: center;
     }
 }

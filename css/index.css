@@ -32,7 +32,12 @@ section {
   z-index: 1; }
 
 a, a:hover, a:focus {
-  text-decoration: none; }
+  text-decoration: none;
+  transition: .3s;
+  perspective: 10000px; }
+
+a:hover {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); }
 
 img {
   width: 100%;
@@ -69,10 +74,13 @@ img {
       font-size: 2.8rem; } }
 
 .-u-color-brown {
-  color: #A88A5F; }
+  color: #A88A5F !important; }
 
 .-u-bg-light-brown {
-  background-color: #EBE7E6; }
+  background-color: #EBE7E6 !important; }
+
+.-u-bg-brown {
+  background-color: #A88A5F !important; }
 
 .text-normal {
   font-weight: 400; }
@@ -271,6 +279,21 @@ img {
             top: -.8rem; }
           .navbar:not(.navbar-expand-lg) .container-lg .navbar-toggler span::after {
             top: .8rem; } }
+  .navbar:not(.navbar-expand-lg) .container-lg .btn.login-button {
+    color: #ffffff;
+    font-size: 1.6rem; }
+    @media only screen and (max-width: 48em) {
+      .navbar:not(.navbar-expand-lg) .container-lg .btn.login-button {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        padding: 1.2rem; } }
+    .navbar:not(.navbar-expand-lg) .container-lg .btn.login-button svg {
+      fill: #ffffff;
+      width: 2.2rem;
+      height: 2.2rem;
+      margin-left: .5rem; }
   .navbar:not(.navbar-expand-lg) .container-lg .navbar-toggler:not(.collapsed) ~ .navbar-collapse.collapsing {
     right: 0; }
   .navbar:not(.navbar-expand-lg) .container-lg .navbar-collapse {
@@ -482,6 +505,26 @@ section.card-text-box {
     border-radius: 0;
     position: relative;
     min-height: 100%; }
+    section.card-text-box .card.card-text.card-text-lg::after {
+      display: none; }
+    section.card-text-box .card.card-text.card-text-lg img {
+      width: 5rem;
+      height: 5rem; }
+    section.card-text-box .card.card-text.card-text-lg .btn {
+      border: 0;
+      background-color: #A88A5F;
+      font-size: 1.4rem;
+      padding: 0.6rem 1rem;
+      display: flex;
+      align-items: center;
+      color: #FFF;
+      cursor: pointer; }
+      section.card-text-box .card.card-text.card-text-lg .btn::before {
+        content: '';
+        height: 1.3px;
+        width: 2rem;
+        background-color: #FFF;
+        margin-right: 1rem; }
     @media only screen and (min-width: 87.5em) {
       section.card-text-box .card.card-text {
         padding: 7rem 10rem 5rem; } }
@@ -672,6 +715,10 @@ section.form-section {
     align-items: center;
     color: #A88A5F;
     cursor: pointer; }
+    section.form-section button.-u-bg-brown {
+      color: #fff; }
+      section.form-section button.-u-bg-brown::before {
+        background-color: #fff; }
     section.form-section button::before {
       content: '';
       height: 1px;
@@ -757,3 +804,79 @@ footer.footer {
     font-size: 1.6rem;
     color: #A88A5F;
     letter-spacing: .15rem; }
+
+section.login-section {
+  background-image: url("./../../asssets/images/rough-to-stone.png");
+  background-size: cover;
+  padding: 10rem 0; }
+  section.login-section .login-form {
+    border: 1px solid #A88A5F;
+    background-color: #EBE7E6;
+    padding: 5rem 3rem 10rem 3rem; }
+    @media only screen and (max-width: 32em) {
+      section.login-section .login-form {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 5rem 0rem 10rem; } }
+    section.login-section .login-form img {
+      width: 3rem;
+      height: auto; }
+    section.login-section .login-form h2 {
+      color: #A88A5F;
+      margin-bottom: 5rem; }
+    section.login-section .login-form label {
+      font-size: 1.2rem; }
+    section.login-section .login-form a {
+      color: #A88A5F;
+      font-size: 1.2rem;
+      text-decoration: underline; }
+    section.login-section .login-form p.text-danger {
+      font-size: 1.2rem; }
+    section.login-section .login-form p.p3 {
+      font-size: 1.4rem;
+      text-align: center; }
+
+section.appointments-section {
+  padding: 10rem 0; }
+  section.appointments-section h1 {
+    color: #A88A5F;
+    margin-bottom: 8rem;
+    text-align: center; }
+  section.appointments-section .card {
+    margin-bottom: 3rem;
+    padding: 3rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    section.appointments-section .card img {
+      width: 3rem; }
+    section.appointments-section .card img:nth-child(2) {
+      width: 15rem;
+      height: auto; }
+    section.appointments-section .card h2 {
+      color: #000; }
+    section.appointments-section .card h3 {
+      color: #545454; }
+    section.appointments-section .card p {
+      font-weight: bold;
+      color: #A88A5F;
+      font-size: 1.4rem; }
+    section.appointments-section .card a {
+      background-color: #A88A5F;
+      color: #fff;
+      font-size: 1.6rem; }
+
+section.banner-lg {
+  position: relative;
+  max-height: 60rem; }
+  section.banner-lg h1 {
+    position: absolute;
+    padding: 3rem;
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center; }
