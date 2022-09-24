@@ -1,3 +1,18 @@
+<?php
+    require_once('config.php');
+    require_once('authentication.php');
+
+    if(!isset($user)) {
+        ?>
+            <script>
+                alert('You must need to login first!');
+                window.location.href = 'login.php';
+            </script>
+        <?php
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,14 +29,43 @@
 <body class="page">
 
     <nav class="navbar navbar-light">
-        <div class="container-lg d-flex">
-            <a class="navbar-brand" href="index.html">
+        <div class="container-lg d-flex align-items-center">
+            <a class="navbar-brand" href="index.php">
                 <img src="./asssets/images/logo-wide.png" width="200" height="auto" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="./asssets/images/menu-logo.png" width="35" height="35" alt="Menu Logo">
                 <span>MENU</span>
             </button>
+
+            <?php
+                if(isset($user)) {
+                    ?>
+                        <div class="nav-item dropdown position-relative mr-auto ml-lg-auto mr-lg-5 mr-lg-0">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./asssets/svg/User.svg" width="30" height="30" alt="">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="profile.php">Profile</a>
+                                <a class="dropdown-item" href="user-dashboard.php">Appointments</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="logout.php">Logout</a>
+                            </div>
+                        </div>
+                    <?php
+                }else{
+                    ?>
+                        <a href="./login.php" class="btn login-button ml-auto -u-bg-brown d-flex align-items-center ">
+                            <span>Login</span>
+                            <svg width="25" height="25">
+                                <use href="./asssets/svg/sprite.svg#icon-log-in"></use>
+                            </svg>
+                        </a>
+                    <?php
+                }
+            ?>
+
+            
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="container">
@@ -31,16 +75,19 @@
                             <span>MENU</span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="about.php">About <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="craftmanship.html">Craftmanship</a>
+                            <a class="nav-link" href="craftmanship.php">Craftmanship</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="women-empowerment.html">Women Empowerment</a>
+                            <a class="nav-link" href="women-empowerment.php">Women Empowerment</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.php">Contact</a>
+                        </li>
+                        <li class="nav-item -u-bg-brown mt-5 mt-lg-0">
+                            <a class="btn mb-0 px-4 py-2" style="font-size: 1.4rem;color: #fff;border: 0;" href="video-call.php">Book Appointment</a>
                         </li>
                         
                     </ul>
@@ -60,17 +107,21 @@
         <section class="form-section mt-5">
             
             <div class="container-lg">
-                <form action="#" class="row">
+                <form action="" class="row" onsubmit="return bookAppointment()">
                     <div class="col-md-6 mb-5">
+                        <p class="p3">First Name*</p>
                         <input class="-u-bg-light-brown" type="text" name="first-name" id="first-name" placeholder="FIRST NAME*" required="">
                     </div>
                     <div class="col-md-6 mb-5">
+                        <p class="p3">Last Name*</p>
                         <input class="-u-bg-light-brown" type="text" name="last-name" id="last-name" placeholder="LAST NAME*" required="">
                     </div>
                     <div class="col-md-6 mb-5">
+                        <p class="p3">Phone*</p>
                         <input class="-u-bg-light-brown" type="number" name="phone" id="phone" placeholder="CONTACT NUMBER*" required="">
                     </div>
                     <div class="col-md-6 mb-5">
+                        <p class="p3">Email*</p>
                         <input class="-u-bg-light-brown" type="email" name="email" id="email" placeholder="EMAIL*" required="">
                     </div>
                     <div class="col-12 my-5">
@@ -78,13 +129,34 @@
                         <p>Select date and time slot for your appointment.</p>
                     </div>
                     <div class="col-md-4 mb-5">
-                        <input class="-u-bg-light-brown" type="text" name="first-name" id="first-name" placeholder="FIRST NAME*" required="">
+                        <p class="p3">Date*</p>
+                        <input class="-u-bg-light-brown" type="date" name="date" id="date" placeholder="Date*" required="" min="" onchange="changeSlots(this)">
                     </div>
                     <div class="col-md-4 mb-5">
-                        <input class="-u-bg-light-brown" type="text" name="first-name" id="first-name" placeholder="FIRST NAME*" required="">
+                        <p class="p3">Time Slot*</p>
+                        <select name="slot" id="slot" class="-u-bg-light-brown">
+                            <!-- <option value='{"slot_time": "16:00", "slot_type_id": "1"}'>17:50</option> -->
+                        </select>
                     </div>
                     <div class="col-md-4 mb-5">
-                        <input class="-u-bg-light-brown" type="text" name="first-name" id="first-name" placeholder="FIRST NAME*" required="">
+                        <p class="p3">Country*</p>
+                        <select name="country" id="country" class="-u-bg-light-brown" onchange="changeTimezone()">
+                            <?php 
+                                $query = "SELECT `country_id`, `country_name`, `country_code`, `timezone` FROM `countries`";
+                                $query_exec = mysqli_query($conn, $query);
+
+                                while($row = mysqli_fetch_assoc($query_exec)) {
+                                    ?>
+                                        <option 
+                                            value='{"country_id":"<?php echo $row['country_id'];?>","country_name":"<?php echo $row['country_name'];?>","country_code":"<?php echo $row['country_code']; ?>","timezone":"<?php echo $row['timezone']; ?>"}'
+
+                                            ><?php echo $row['country_name']; ?>
+                                        </option>
+                                    <?php
+                                }
+
+                            ?>
+                        </select>
                     </div>
                     
                     <div class="col-12 d-flex align-items-center justify-content-center py-5">

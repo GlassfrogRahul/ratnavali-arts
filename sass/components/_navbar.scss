@@ -132,6 +132,8 @@
                     border-bottom: 0;
                 }
 
+                
+
                 li.nav-item{
                     @media only screen and (max-width: 62em) {
                         border-bottom: 1px solid $color-brown;
@@ -156,6 +158,9 @@
                         }
 
                     }
+
+                    
+
                     a.nav-link{
                         font-size: 1.6rem;
                         text-transform: uppercase;
@@ -166,6 +171,24 @@
                         }
                     }
                 }
+
+                a.btn{
+                    font-size: 1.4rem;
+                    color: #fff;
+                    svg{
+                        fill: #fff;
+                        margin-left: .8rem;
+                    }
+                }
+
+                a.dropdown-toggle{
+                    img{
+                        transform: scale(1);
+                        background-color: rgba(255, 255, 255, 0.8);
+                        border-radius: 10rem;
+                    }
+                }
+
             }
         }
     }
@@ -381,4 +404,55 @@
         }
     }
     
+}
+
+.nav-item.dropdown{
+    font-size: 1.6rem;
+
+    @media only screen and (max-width: 64em) {
+        position: absolute !important;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+    }
+
+    a{
+        color: $color-brown;
+        &:hover{
+            box-shadow: unset;
+        }
+    }
+
+    a.dropdown-item:first-child{
+        display: none;
+    }
+
+    .dropdown-toggle{
+        &::after{
+            z-index: 3;
+            position: relative;
+            display: none;
+        }
+        img{
+            width: 3rem;
+            height: 3rem;
+            transform: scale(2);
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    .dropdown-menu{
+        left: unset;
+        right: 1rem;
+        @media only screen and (max-width: 64em) {
+            left: 1rem;
+            right: unset;
+        }
+        a{
+            color: $color-gray;
+            font-size: 1.4rem;
+
+        }
+    }
 }

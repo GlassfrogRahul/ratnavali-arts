@@ -1,3 +1,9 @@
+<?php
+    require_once('config.php');
+    require_once('authentication.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,31 +21,93 @@
 
     <nav class="navbar navbar-expand-lg navbar-light home-navbar">
         <div class="container-lg d-lg-flex w-100">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
                 <img src="./asssets/svg/logo-white.svg" width="200" height="auto" alt="">
             </a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <div class="d-block d-lg-none">
+            <?php
+                if(isset($user)) {
+                    ?>
+                        <div class="nav-item dropdown position-relative mr-auto ml-lg-auto mr-lg-5 mr-lg-0">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./asssets/svg/user-circle.svg" width="30" height="30" alt="" style="transform: scale(1);background-color: #fff;border-radius: 10rem;">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="profile.php">Profile</a>
+                                <a class="dropdown-item" href="user-dashboard.php">Appointments</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="logout.php">Logout</a>
+                            </div>
+                        </div>
+                    <?php
+                }else{
+                    ?>
+                        <a href="./login.php" class="btn login-button ml-auto -u-bg-brown d-flex align-items-center ">
+                            <span>Login</span>
+                            <svg width="25" height="25">
+                                <use href="./asssets/svg/sprite.svg#icon-log-in"></use>
+                            </svg>
+                        </a>
+                    <?php
+                }
+            ?>
+            </div>
+
         
             <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
-                <ul class="navbar-nav ">
+                <ul class="navbar-nav align-items-center">
                     <li class="nav-item d-lg-none d-flex align-items-center justify-content-center" data-toggle="collapse" onclick="toggleNavbar()">
                         <img src="./asssets/images/menu-logo.png" width="35" height="35" alt="Menu Logo">
                         <span>MENU</span>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="about.php">About <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="craftmanship.html">Craftmanship</a>
+                        <a class="nav-link" href="craftmanship.php">Craftmanship</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="women-empowerment.html">Women Empowerment</a>
+                        <a class="nav-link" href="women-empowerment.php">Women Empowerment</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.php">Contact</a>
                     </li>
+
+                    <li class="nav-item -u-bg-brown mt-5 mt-lg-0">
+                        <a class="btn" href="video-call.php">Book Appointment</a>
+                    </li>
+
+                    <?php
+                        if(isset($user)) {
+                            ?>
+                                <li class="nav-item dropdown position-relative">
+                                    <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="./asssets/svg/user-circle.svg" width="30" height="30" alt="">
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="profile.php">Profile</a>
+                                        <a class="dropdown-item" href="user-dashboard.php">Appointments</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="logout.php">Logout</a>
+                                    </div>
+                                </li>
+                            <?php
+                        }else{
+                            ?>
+                                <a href="./login.php" class="btn login-button -u-bg-brown d-flex align-items-center ">
+                                    <span>Login</span>
+                                    <svg width="25" height="25">
+                                        <use href="./asssets/svg/sprite.svg#icon-log-in"></use>
+                                    </svg>
+                                </a>
+                            <?php
+                        }
+                    ?>
                     
                 </ul>
             

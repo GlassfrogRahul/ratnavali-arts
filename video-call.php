@@ -1,3 +1,9 @@
+<?php
+    require_once('config.php');
+    require_once('authentication.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,14 +20,43 @@
 <body class="page">
 
     <nav class="navbar navbar-light">
-        <div class="container-lg d-flex">
-            <a class="navbar-brand" href="index.html">
+        <div class="container-lg d-flex align-items-center">
+            <a class="navbar-brand" href="index.php">
                 <img src="./asssets/images/logo-wide.png" width="200" height="auto" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="./asssets/images/menu-logo.png" width="35" height="35" alt="Menu Logo">
                 <span>MENU</span>
             </button>
+
+            <?php
+                if(isset($user)) {
+                    ?>
+                        <div class="nav-item dropdown position-relative mr-auto ml-lg-auto mr-lg-5 mr-lg-0">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./asssets/svg/User.svg" width="30" height="30" alt="">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="profile.php">Profile</a>
+                                <a class="dropdown-item" href="user-dashboard.php">Appointments</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="logout.php">Logout</a>
+                            </div>
+                        </div>
+                    <?php
+                }else{
+                    ?>
+                        <a href="./login.php" class="btn login-button ml-auto -u-bg-brown d-flex align-items-center ">
+                            <span>Login</span>
+                            <svg width="25" height="25">
+                                <use href="./asssets/svg/sprite.svg#icon-log-in"></use>
+                            </svg>
+                        </a>
+                    <?php
+                }
+            ?>
+
+            
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="container">
@@ -31,16 +66,19 @@
                             <span>MENU</span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="about.php">About <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="craftmanship.html">Craftmanship</a>
+                            <a class="nav-link" href="craftmanship.php">Craftmanship</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="women-empowerment.html">Women Empowerment</a>
+                            <a class="nav-link" href="women-empowerment.php">Women Empowerment</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.php">Contact</a>
+                        </li>
+                        <li class="nav-item -u-bg-brown mt-5 mt-lg-0">
+                            <a class="btn mb-0 px-4 py-2" style="font-size: 1.4rem;color: #fff;border: 0;" href="video-call.php">Book Appointment</a>
                         </li>
                         
                     </ul>
@@ -67,7 +105,7 @@
                             <h2 class="mb-3">Video Call Facility</h2>
                             <p>We are providing the video call option where  you can come and visit our whole manufacturing unit with us. </p>
                             <p>Click on book appointment to see the available time and date for your appointment and book it for factory visit.</p>
-                            <a href="#" class="btn d-flex align-items-center">Book Appointment</a>
+                            <a href="book-appointment.php" class="btn d-flex align-items-center">Book Appointment</a>
                         </div>
                     </div>
                 </div>

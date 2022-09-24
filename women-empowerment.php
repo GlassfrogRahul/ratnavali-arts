@@ -1,3 +1,9 @@
+<?php
+    require_once('config.php');
+    require_once('authentication.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,14 +20,43 @@
 <body class="page">
 
     <nav class="navbar navbar-light">
-        <div class="container-lg d-flex">
-            <a class="navbar-brand" href="index.html">
+        <div class="container-lg d-flex align-items-center">
+            <a class="navbar-brand" href="index.php">
                 <img src="./asssets/images/logo-wide.png" width="200" height="auto" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="./asssets/images/menu-logo.png" width="35" height="35" alt="Menu Logo">
                 <span>MENU</span>
             </button>
+
+            <?php
+                if(isset($user)) {
+                    ?>
+                        <div class="nav-item dropdown position-relative mr-auto ml-lg-auto mr-lg-5 mr-lg-0">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./asssets/svg/User.svg" width="30" height="30" alt="">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="profile.php">Profile</a>
+                                <a class="dropdown-item" href="user-dashboard.php">Appointments</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="logout.php">Logout</a>
+                            </div>
+                        </div>
+                    <?php
+                }else{
+                    ?>
+                        <a href="./login.php" class="btn login-button ml-auto -u-bg-brown d-flex align-items-center ">
+                            <span>Login</span>
+                            <svg width="25" height="25">
+                                <use href="./asssets/svg/sprite.svg#icon-log-in"></use>
+                            </svg>
+                        </a>
+                    <?php
+                }
+            ?>
+
+            
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="container">
@@ -31,16 +66,19 @@
                             <span>MENU</span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="about.php">About <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="craftmanship.html">Craftmanship</a>
+                            <a class="nav-link" href="craftmanship.php">Craftmanship</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="women-empowerment.html">Women Empowerment</a>
+                            <a class="nav-link" href="women-empowerment.php">Women Empowerment</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.php">Contact</a>
+                        </li>
+                        <li class="nav-item -u-bg-brown mt-5 mt-lg-0">
+                            <a class="btn mb-0 px-4 py-2" style="font-size: 1.4rem;color: #fff;border: 0;" href="video-call.php">Book Appointment</a>
                         </li>
                         
                     </ul>
@@ -60,8 +98,8 @@
         <!--Video Section-->
         <section class="video-section">
             <div class="container d-flex flex-column align-items-center">
-                <h1 class="h2 -u-color-brown mb-5">Believe In Magic</h1>
-                <p class="mb-5 col-md-11">At Ratnavali Arts, designing jewellery is not just a job, it is our ongoing passion. Working with all their dedication, craftspeople meticulously transpose the paper sketch into real jewellery.</p>
+                <h1 class="h2 -u-color-brown mb-5">The Magic Of Women Artisans</h1>
+                <p class="mb-5 col-md-8">It's all about believing in yourself! <br> Our women artisans our strength!</p>
                 <div class="video-box col-md-10">
                     <button class="play " onclick="playVideo(this)" type="button"><img src="./asssets/svg/play-button.svg" alt="Play Button"></button>
                     <button class="pause active" onclick="pauseVideo(this)" type="button"><img src="./asssets/svg/pause-button.svg" alt="Pause Button"></button>
@@ -70,14 +108,9 @@
             </div>
         </section><!--End Video Section-->
 
-        <!--Heading Box-->
-        <section class="heading-box -u-bg-light-brown">
-            <h2 class="h2 text-center text-normal">MANUFACTURING</h2>
-        </section><!--End Heading Box-->
-
         <!--Banner-->
         <section class="banner">
-            <img src="./asssets/images/manufacturing.png" width="100%" height="auto" alt="Process Image">
+            <img src="./asssets/images/women-banner.png" width="100%" height="auto" alt="Process Image">
         </section><!--End Banner-->
 
         <!--Card Text Box-->
@@ -86,17 +119,17 @@
                 <div class="row">
                     <div class="col-lg-7 mt-5 col-xl-">
                         <div class="row card-image-row">
-                            <div class="col-6 mb-5">
-                                <img src="./asssets/images/sh-1.png" width="100%" height="100%" alt="">
+                            <div class="col-md-6 mb-5">
+                                <img src="./asssets/images/shw-1.png" width="100%" height="100%" alt="">
                             </div>
-                            <div class="col-6 mb-5">
-                                <img src="./asssets/images/sh-2.png" width="100%" height="100%" alt="">
+                            <div class="col-md-6 mb-5">
+                                <img src="./asssets/images/shw-2.png" width="100%" height="100%" alt="">
                             </div>
-                            <div class="col-6 mb-5 mb-lg-0">
-                                <img src="./asssets/images/sh-3.png" width="100%" height="100%" alt="">
+                            <div class="col-md-6 mb-5 mb-lg-0">
+                                <img src="./asssets/images/shw-3.png" width="100%" height="100%" alt="">
                             </div>
-                            <div class="col-6 mb-5 mb-lg-0">
-                                <img src="./asssets/images/sh-4.png" width="100%" height="100%" alt="">
+                            <div class="col-md-6 mb-5 mb-lg-0">
+                                <img src="./asssets/images/shw-4.png" width="100%" height="100%" alt="">
                             </div>
                         </div>
                     </div>
@@ -114,77 +147,48 @@
             </div>
         </section><!--End Card Text Box-->
 
-        <!--Heading Box-->
-        <section class="heading-box -u-bg-light-brown">
-            <h2 class="h2 text-center text-normal">ROUGH TO STONE</h2>
-        </section><!--End Heading Box-->
-
-        <!--Banner-->
-        <section class="banner">
-            <img src="./asssets/images/rough-to-stone.png" width="100%" height="auto" alt="Process Image">
-        </section><!--End Banner-->
-
-        <!--Card Text Box-->
-        <section class="card-text-box">
+        <!--Images Grid-->
+        <section class="images-grid">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-7 mt-5 col-xl-">
-                        <div class="row card-image-row">
-                            <div class="col-6 mb-5">
-                                <img src="./asssets/images/shb-1.png" width="100%" height="100%" alt="">
+                    <div class="col-12">
+                        <img src="./asssets/images/g-1.png" width="100%" height="auto" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <img src="./asssets/images/g-2.png" width="100%" height="auto" alt="">
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row h-100">
+                            <div class="col-6 col-md-12">
+                                <img src="./asssets/images/g-3.png" width="100%" height="100%" alt="">
                             </div>
-                            <div class="col-6 mb-5">
-                                <img src="./asssets/images/shb-2.png" width="100%" height="100%" alt="">
-                            </div>
-                            <div class="col-6 mb-5 mb-lg-0">
-                                <img src="./asssets/images/shb-3.png" width="100%" height="100%" alt="">
-                            </div>
-                            <div class="col-6 mb-5 mb-lg-0">
-                                <img src="./asssets/images/shb-4.png" width="100%" height="100%" alt="">
+                            <div class="col-6 col-md-12">
+                                <img src="./asssets/images/g-4.png" width="100%" height="100%" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-xl-">
-                        <div class="card card-text d-flex flex-column align-items-center text-center">
-                            <img src="./asssets/images/monogram.png" class="mb-3" width="30" height="30" alt="Monogram Logo">
-                            <h3 class="h2 mb-5 text-normal -u-color-brown">FAMILY</h3>
-                            <p>At Ratnavali Arts, we create pieces with artful decorative details. We are the whole company that starts working from scratch and making a product live.</p>
-                            <p>We are a jewelry manufacturing company that makes every product from the heart and guarantees that it is of the best quality. </p>
-                            <p>We work with brands and their designers to bring their products to market, efficiently, and of the highest quality. </p>
-                            <p>Much of the fame and success of the company can be attributed to the extremely skilled set of artisans who have been working with Ratnavali Arts for many years.</p>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="row h-100">
+                            <div class="col-6 col-md-12">
+                                <img src="./asssets/images/g-5.png" width="100%" height="100%" alt="">
+                            </div>
+                            <div class="col-6 col-md-12">
+                                <img src="./asssets/images/g-6.png" width="100%" height="100%" alt="">
+                            </div>
                         </div>
                     </div>
+                    <div class="col-lg-8">
+                        <img src="./asssets/images/g-7.png" width="100%" height="auto" alt="">
+                    </div>
+                    
                 </div>
             </div>
-        </section><!--End Card Text Box-->
-
-        <!--Two Column-->
-        <section class="two-column mt-5">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>We're one of the renowned jewelry manufacturers in Jaipur. We provide the most professionally crafted and custom jewelry with full in-house service from start to end. </p>
-                    </div>
-                    <div class="col-md-6 position-relative">
-                        <img src="./asssets/images/we-are-one.png" width="100%" height="400" alt="">
-                    </div>
-                </div>
-            </div>
-        </section><!--End Two Column-->
-
-        <!--Two Column-->
-        <section class="two-column">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 position-relative">
-                        <img src="./asssets/images/women-empowerment.png" width="100%" height="400" alt="">
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#"><span>WOMEN EMPOWEMENT</span></a>
-                    </div>
-                </div>
-            </div>
-        </section><!--End Two Column-->
+        </section><!--End Images Grid-->
 
         <!--Heading Box-->
         <section class="heading-box -u-bg-light-brown">
