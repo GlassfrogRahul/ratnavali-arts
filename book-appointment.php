@@ -140,7 +140,7 @@ if(!isset($user)) {
     ?>
         <script>
             showModal('You must need to login first! Will redirect in 5 sec!', 'Error');
-            setTimeout(() => {window.location.href = 'login.php';}, 2000)
+            setTimeout(() => {window.location.href = 'login.php';}, 5000)
         </script>
     <?php
 }
