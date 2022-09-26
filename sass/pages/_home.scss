@@ -731,3 +731,29 @@ section.banner-lg{
         text-align: center;
     }
 }
+
+
+
+
+
+
+.modal{
+    button.close{
+        font-size: 2.6rem;
+        text-align: right;
+        margin-right: 1rem;
+        margin-top: .5rem;
+    }
+
+    img{
+        width: 3rem;
+    }
+
+    img.notification{
+        width: 40%;
+    }
+
+    .modal-footer{
+        border-top: 0;
+    }
+}

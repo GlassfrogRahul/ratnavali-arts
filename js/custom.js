@@ -70,7 +70,7 @@ function changeSlots(dom) {
             }
 
             if(document.querySelectorAll('#slot option').length == 0) {
-                return alert('No Appointments left');
+                return showModal('No Appointments left', 'Error');
             }
             changeTimezone();
             isFetchingAppointment = false;
@@ -91,15 +91,15 @@ function changeTimezone() {
 function bookAppointment() {
 
     if(isBooking) {
-        return alert('Please wait until last query not fulfiled');
+        return showModal('Please wait until last query not fulfiled', 'Error');
     }
 
     if(isFetchingAppointment) {
-        return alert("Please wait while fetching appointments!");
+        return showModal("Please wait while fetching appointments!", 'Error');
     }
 
     if(document.querySelectorAll('#slot option').length == 0) {
-        return alert('No Appointments selected');
+        return showModal('No Appointments selected', 'Error');
     }
 
     isBooking = true;
@@ -134,7 +134,7 @@ function bookAppointment() {
     xhr.open('POST', 'api/register-appointment.php');
     xhr.onload = function() {
         const response = JSON.parse(xhr.responseText);
-        alert(response.message);
+        showModal(response.message, 'Response');
         if(response.status == 201) {
             window.location.href = 'user-dashboard.php';
         }
@@ -148,7 +148,11 @@ function bookAppointment() {
 }
 
 
-
+function showModal(message, title) {
+    document.querySelector('#modal-title').textContent = title;
+    document.querySelector('#modal-content').textContent = message;
+    document.querySelector('#modal-button').click()
+}
 
 
 

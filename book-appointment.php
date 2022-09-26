@@ -2,14 +2,7 @@
     require_once('config.php');
     require_once('authentication.php');
 
-    if(!isset($user)) {
-        ?>
-            <script>
-                alert('You must need to login first!');
-                window.location.href = 'login.php';
-            </script>
-        <?php
-    }
+    
 
 ?>
 
@@ -142,4 +135,14 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="./js/custom.js"></script>
+<?php
+if(!isset($user)) {
+    ?>
+        <script>
+            showModal('You must need to login first! Will redirect in 5 sec!', 'Error');
+            setTimeout(() => {window.location.href = 'login.php';}, 2000)
+        </script>
+    <?php
+}
+?>
 </html>

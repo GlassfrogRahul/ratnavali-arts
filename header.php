@@ -1,3 +1,44 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary d-none" data-toggle="modal" data-target="#exampleModal" id="modal-button">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content pb-3">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body d-flex flex-column align-items-center">
+
+                <img class="mb-5" src="asssets/images/monogram.png" width="30" height="30" alt="">
+                <h5 class="modal-title h3 text-center -u-color-brown w-100 mb-3" id="modal-title">Modal title</h5>
+
+                <img class="notification mb-5" src="asssets/svg/Notification.svg" alt="">
+
+                <p class="text-center p2 px-5 mb-3" id="modal-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolore!</p>
+
+            </div>
+            <div class="modal-footer d-flex align-items-center justify-content-center pb-5">
+                <button type="button" class="btn btn-secondary p2" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <nav class="navbar navbar-light">
     <div class="container-lg d-flex align-items-center">
         <a class="navbar-brand" href="index.php">
