@@ -8,42 +8,7 @@
 
 ?>
 
-<?php
-    if(isset($_POST) && isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['number']) && isset($_POST['country'])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $password = md5($_POST['password']);
-        $number = $_POST['number'];
-        $country = $_POST['country'];
 
-        $account_exists_query = "SELECT COUNT(*) AS `count` FROM `users` WHERE `email` = '$email'";
-        $account_exists_query_exec = json_decode(json_encode(mysqli_query($conn, $account_exists_query)), true);
-
-        if(isset($account_exists_query_exec['count'])) {
-            ?>
-                <script>
-                    alert('Account already exists!');
-                </script>
-            <?php
-        }else{
-            $query = "INSERT INTO `users`(`email`, `password`, `name`, `phone`,`country`) VALUES ('$email','$password','$name','$number','$country')";
-            $query_exec = mysqli_query($conn, $query);
-
-            if($query_exec) {
-                ?>
-                    <script>
-                        alert('Account created successfully!')
-                    </script>
-                <?php
-            }
-
-            ?>
-
-            <?php
-        }
-
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,3 +99,39 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="./js/custom.js"></script>
 </html>
+<?php
+    if(isset($_POST) && isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['number']) && isset($_POST['country'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $password = md5($_POST['password']);
+        $number = $_POST['number'];
+        $country = $_POST['country'];
+
+        $account_exists_query = "SELECT COUNT(*) AS `count` FROM `users` WHERE `email` = '$email'";
+        $account_exists_query_exec = json_decode(json_encode(mysqli_query($conn, $account_exists_query)), true);
+
+        if(isset($account_exists_query_exec['count'])) {
+            ?>
+                <script>
+                    showModal('Account already exists!', 'Error');
+                </script>
+            <?php
+        }else{
+            $query = "INSERT INTO `users`(`email`, `password`, `name`, `phone`,`country`) VALUES ('$email','$password','$name','$number','$country')";
+            $query_exec = mysqli_query($conn, $query);
+
+            if($query_exec) {
+                ?>
+                    <script>
+                        showModal('Account created successfully!', 'Success')
+                    </script>
+                <?php
+            }
+
+            ?>
+
+            <?php
+        }
+
+    }
+?>
