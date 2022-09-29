@@ -39,7 +39,7 @@
             <div class="container-lg">
                 <div class="row">
                     <div class="col-xl-4 col-lg-6 col-md-7 col-sm-9 mx-auto my-auto">
-                        <img class="overflow-image" src="./asssets/images/no-image.png" alt="No Image" width="100%" height="auto" >
+                        <img class="overflow-image" src="./asssets/images/ajay-kumar.png" alt="Ajay Kumar" width="100%" height="auto" >
                     </div>
 
                     <div class="col-xl-7 col-lg-6 col-md-7 col-sm-9 mx-auto mx-xl-auto">

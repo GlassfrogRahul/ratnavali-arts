@@ -438,7 +438,7 @@ section.banner {
       min-height: auto; } }
   @media only screen and (max-width: 36em) {
     section.banner {
-      height: 50rem; } }
+      min-height: 40rem; } }
   section.banner img {
     position: absolute;
     top: 0;
@@ -449,7 +449,9 @@ section.banner {
     z-index: 2; }
     @media only screen and (max-width: 62em) {
       section.banner img {
-        position: relative; } }
+        position: relative;
+        height: 100%;
+        min-height: 40rem; } }
   section.banner h1, section.banner h2 {
     color: #ffffff;
     z-index: 3;

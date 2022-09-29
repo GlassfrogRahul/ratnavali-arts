@@ -25,7 +25,9 @@
 
         <!--Banner-->
         <section class="banner">
-            <video src="./asssets/video/video-ratnavali.mp4" autoplay playsinline muted="true" loop height="auto" width="100%"></video>
+            <video src="./asssets/video/v1.mp4" class="d-none d-md-block" autoplay playsinline muted="true" loop height="auto" width="100%"></video>
+            <video src="./asssets/video/m1.mp4" class="d-md-none" autoplay playsinline muted="true" loop height="auto" width="100%"></video>
+
         </section><!--End Banner-->
 
         <!--Video Section-->
@@ -36,7 +38,7 @@
                 <div class="video-box col-md-10">
                     <button class="play " onclick="playVideo(this)" type="button"><img src="./asssets/svg/play-button.svg" alt="Play Button"></button>
                     <button class="pause active" onclick="pauseVideo(this)" type="button"><img src="./asssets/svg/pause-button.svg" alt="Pause Button"></button>
-                    <video src="./asssets/video/video-ratnavali.mp4" playsinline muted="true" loop height="auto" width="100%"></video>
+                    <video src="./asssets/video/v2.mp4" playsinline muted="true" loop height="auto" width="100%"></video>
                 </div>
             </div>
         </section><!--End Video Section-->
