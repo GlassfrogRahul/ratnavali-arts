@@ -3,6 +3,7 @@
     require_once('authentication.php');
 
     if(isset($user)) {
+       
         header('Location: user-dashboard.php');
     }
 
@@ -17,6 +18,8 @@
 
         if($user) {
             setcookie('user', json_encode($user));
+            
+           
             header("Location: user-dashboard.php");
         }
 

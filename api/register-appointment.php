@@ -2,7 +2,8 @@
 
     require_once('../config.php');
     require_once('../authentication.php');
-
+    require_once('../classes/videoClass.php');
+    $video =new Video();
     if(!isset($user)) {
         echo json_encode(array(
             'status' => 401,
@@ -26,10 +27,11 @@
         $status = "1";
 
         $user_id = $user['id'];
+        $video=json_decode($video->generateToken($first_name),true);
 
 
-        $query = "INSERT INTO `booked_slots`(`user_id`, `first_name`, `last_name`, `phone`, `email`, `country_id`, `slot_type_id`, `slot_status`, `date`, `time`) VALUES".
-                    " ('$user_id','$first_name','$last_name','$phone','$email','$country_id','$slot_type_id','$status',str_to_date('$date', '%d-%m-%Y'),'$time')";
+        $query = "INSERT INTO `booked_slots`(`user_id`, `first_name`, `last_name`, `phone`, `email`, `country_id`, `slot_type_id`, `slot_status`,`token`,`session`, `date`, `time`) VALUES".
+                    " ('$user_id','$first_name','$last_name','$phone','$email','$country_id','$slot_type_id','$status','".$video['token']."','".$video['session']."',str_to_date('$date', '%d-%m-%Y'),'$time')";
 
         $query_exec = mysqli_query($conn, $query);
 

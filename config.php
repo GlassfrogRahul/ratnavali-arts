@@ -24,4 +24,5 @@
         $conn = mysqli_connect($host, $db_user, $db_password, $database);
     }
 
-?>
+
+    ?>
