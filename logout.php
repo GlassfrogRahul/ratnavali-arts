@@ -1,6 +1,5 @@
 <?php
-    unset($_COOKIE['user']); 
-    setcookie('user', null, -1, '/'); 
 
+    setcookie('user',null,time()-3600); 
     header('Location: login.php');
 ?>

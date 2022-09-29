@@ -12,9 +12,7 @@
         $temp_user = mysqli_fetch_assoc($query_exec);
 
         if($user['id'] != $temp_user['id']) {
-            unset($_COOKIE['user']); 
-            setcookie('user', null, -1, '/'); 
-
+            setcookie('user',null,time()-3600); 
             header('Location: login.php');
         }
 

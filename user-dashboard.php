@@ -41,7 +41,7 @@
                 <div class="row">
 
                     <?php
-                        $query = "SELECT `slot_id`, `user_id`, `first_name`, `last_name`, `phone`, `email`, `country_id`, `slot_type_id`, `slot_status`, `date`, `time` FROM `booked_slots` ORDER BY slot_id DESC";
+                        $query = "SELECT `slot_id`, `user_id`, `first_name`, `last_name`, `phone`, `email`, `country_id`, `slot_type_id`, `slot_status`, `date`, `time` FROM `booked_slots` Where `user_id`='".$user['id']."' ORDER BY slot_id DESC";
                         $query_exec = mysqli_query($conn, $query);
 
                         while($row = mysqli_fetch_assoc($query_exec)) {
