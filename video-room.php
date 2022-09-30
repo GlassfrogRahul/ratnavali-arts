@@ -38,7 +38,7 @@ body{
 </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js" integrity="sha512-MgkNs0gNdrnOM7k+0L+wgiRc5aLgl74sJQKbIWegVIMvVGPc1+gc1L2oK9Wf/D9pq58eqIJAxOonYPVE5UwUFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
     <script>
-     const path="https://staging.ratnavali.glassfrog.design/user-dashboard.php";
+     const path="/user-dashboard.php";
       const userName = "<?= $user['name'] ?>";
       const apiKey = "47580871";
       const sessionId = "<?=  $app['session'] ?>";
@@ -195,6 +195,35 @@ function initializeSession() {
   });
 }
 
+
+const switchCamera=function(){
+    publisher.cycleVideo().then(
+       
+    );
+  }
+
+
+  //mic coding
+const toggleMic = function(){
+    const button = document.querySelector('.video-navitem.mic');
+    let active = button.classList.contains('active');
+    button.classList.toggle('active', !active);
+    publisher.publishAudio(!active);
+} 
+
+//camera coding
+const toggleCamera = function(){
+    const button = document.querySelector('.video-navitem.camera');
+    let active = button.classList.contains('active');
+    button.classList.toggle('active', !active);
+    publisher.publishVideo(!active);
+} 
+
+function redirect(){
+    const a = document.createElement('a');
+    a.href=window.location.origin + path;
+    a.click();
+}
 
 </script>
 <script src="asssets/js/video.js"></script>

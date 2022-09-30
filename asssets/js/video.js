@@ -1,26 +1,21 @@
 const filesMap = new Map();
 
-//mic coding
-const toggleMic = function(){
-    const button = document.querySelector('.video-navitem.mic');
-    let active = button.classList.contains('active');
-    button.classList.toggle('active', !active);
-    publisher.publishAudio(!active);
-} 
+// //mic coding
+// const toggleMic = function(){
+//     const button = document.querySelector('.video-navitem.mic');
+//     let active = button.classList.contains('active');
+//     button.classList.toggle('active', !active);
+//     publisher.publishAudio(!active);
+// } 
 
-//camera coding
-const toggleCamera = function(){
-    const button = document.querySelector('.video-navitem.camera');
-    let active = button.classList.contains('active');
-    button.classList.toggle('active', !active);
-    publisher.publishVideo(!active);
-} 
+// //camera coding
+// const toggleCamera = function(){
+//     const button = document.querySelector('.video-navitem.camera');
+//     let active = button.classList.contains('active');
+//     button.classList.toggle('active', !active);
+//     publisher.publishVideo(!active);
+// } 
 
-const switchCamera=function(){
-    publisher.cycleVideo().then(
-       
-    );
-  }
 
 
 
