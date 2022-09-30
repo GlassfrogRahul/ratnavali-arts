@@ -1,6 +1,7 @@
 
 
 <?php
+
     $prod = false;
 
     $host = 'localhost';
@@ -19,8 +20,9 @@
     if($prod == true) {
         $host = 'localhost';
         $database = 'ratnawali_db';
-        $db_user = 'root';
-        $db_password = '';
+        $db_user = 'zapmedics';
+        $db_password = 'Zapmedics@*8920';
+
         $conn = mysqli_connect($host, $db_user, $db_password, $database);
     }
 

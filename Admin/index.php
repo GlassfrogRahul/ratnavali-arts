@@ -1,3 +1,8 @@
+<?php session_start(); 
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +10,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Majestic Admin</title>
+  <title>Ratnavali</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
@@ -15,10 +20,19 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="css/style.css">
   <!-- endinject -->
+<style>
+  .modal-footer{
+    height:20px;
+  }
+  </style>
   <link rel="shortcut icon" href="" />
 </head>
 
 <body>
+
+
+
+
   <div class="container-scroller">
     <div class="container-fluid page-body-wrapper full-page-wrapper">
       <div class="content-wrapper d-flex align-items-stretch auth auth-img-bg">
@@ -32,7 +46,7 @@
               <h6 class="font-weight-light">Welcome back!</h6>
 
 
-              <form class="pt-3" action="" method="post">
+              <form class="" action="controller/Login.php" method="post">
                 <div class="form-group">
                   <label for="exampleInputEmail">Email</label>
                   <div class="input-group">
@@ -41,9 +55,10 @@
                         <i class="mdi mdi-account-outline "></i>
                       </span>
                     </div>
-                    <input type="email" required class="form-control form-control-lg border-left-0" id="exampleInputEmail" placeholder="Username">
+                    <input type="email" name="email" value="ratnavali@gmail.com" required class="form-control form-control-lg border-left-0" id="exampleInputEmail" placeholder="Username">
                   </div>
                 </div>
+                <input type="hidden" value="ADMIN" name="type" />
                 <div class="form-group">
                   <label for="exampleInputPassword">Password</label>
                   <div class="input-group">
@@ -52,7 +67,7 @@
                         <i class="mdi mdi-lock-outline "></i>
                       </span>
                     </div>
-                    <input type="password" required class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="Password">                        
+                    <input type="password" name="password" required class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="Password">                        
                   </div>
                 </div>
                 <div class="my-2 d-flex justify-content-between align-items-center">
@@ -69,6 +84,7 @@
                 </div>             
               </form>
 
+              
 
             </div>
           </div>
@@ -83,9 +99,16 @@
   </div>
   <!-- container-scroller -->
   <!-- plugins:js -->
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <?php include('includes/script.php') ?>
   <script src="vendors/base/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- inject:js -->
+  
   <script src="js/off-canvas.js"></script>
   <script src="js/hoverable-collapse.js"></script>
   <script src="js/template.js"></script>

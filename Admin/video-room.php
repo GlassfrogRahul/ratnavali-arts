@@ -1,11 +1,8 @@
 <?php
-    require_once('config.php');
-    require_once('authentication.php');
+    require_once('../config.php');
+    require_once('../authentication.php');
 
   
-    if(!isset($user)) {
-        header("Location: login.php");
-    }
 
     $countries = array();
 
@@ -29,7 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ratnavali </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="asssets/css/video.css">
+    <link rel="stylesheet" href="../asssets/css/video.css">
 <style>
 body{
   background-color: gray;
@@ -38,8 +35,8 @@ body{
 </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js" integrity="sha512-MgkNs0gNdrnOM7k+0L+wgiRc5aLgl74sJQKbIWegVIMvVGPc1+gc1L2oK9Wf/D9pq58eqIJAxOonYPVE5UwUFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
     <script>
-     const path="https://staging.ratnavali.glassfrog.design/user-dashboard.php";
-      const userName = "<?= $user['name'] ?>";
+     const path="https://staging.ratnavali.glassfrog.design/Admin/dashboard.php";
+      const userName = "Aniket";
       const apiKey = "47580871";
       const sessionId = "<?=  $app['session'] ?>";
       const token = "<?=  $app['token'] ?>";
@@ -88,55 +85,56 @@ body{
 
         <nav class="video-navbar w-100 position-absolute">
           <ul class="video-navlist d-flex justify-content-center align-items-center mb-0  pl-0">
+   
 
-                <li class="video-navitem active switch-camera d-flex align-items-center justify-content-center p-2 mr-2"  onclick="switchCamera()">
+          <li class="video-navitem active switch-camera d-flex align-items-center justify-content-center p-2 mr-2"  onclick="switchCamera()">
               <svg>
-                <use href="asssets/icons/sprite.svg#icon-flip_camera_ios"></use>
+                <use href="../asssets/icons/sprite.svg#icon-flip_camera_ios"></use>
               </svg>
               <svg>
-                <use href="asssets/icons/sprite.svg#icon-flip_camera_ios"></use>
+                <use href="../asssets/icons/sprite.svg#icon-flip_camera_ios"></use>
               </svg>
             </li> 
-            
-            <li class="video-navitem active d-lg-none align-items-center justify-content-center p-2 mr-2 d-none" onclick="changeCamera()"><!-- Remove class d-none and add class d-flex -->
-              <svg>
-                <use href="asssets/icons/sprite.svg#icon-flip_camera_ios"></use>
-              </svg>
-              <svg>
-                <use href="asssets/icons/sprite.svg#icon-flip_camera_ios"></use>
-              </svg>
-            </li>
+
+          
             <li class="video-navitem active mic d-flex align-items-center justify-content-center p-2 mr-2" onclick="toggleMic()">
               <svg>
-                <use href="asssets/icons/sprite.svg#icon-mic"></use>
+                <use href="../asssets/icons/sprite.svg#icon-mic"></use>
               </svg>
               <svg>
-                <use href="asssets/icons/sprite.svg#icon-mic_off"></use>
+                <use href="../asssets/icons/sprite.svg#icon-mic_off"></use>
               </svg>
             </li>
             <li class="video-navitem active camera d-flex align-items-center justify-content-center p-2 mr-2" onclick="toggleCamera()">
               <svg>
-                <use href="asssets/icons/sprite.svg#icon-videocam"></use>
+                <use href="../asssets/icons/sprite.svg#icon-videocam"></use>
               </svg>
               <svg>
-                <use href="asssets/icons/sprite.svg#icon-videocam_off"></use>
+                <use href="../asssets/icons/sprite.svg#icon-videocam_off"></use>
               </svg>
             </li>
             <li class="video-navitem screen-button d-none align-items-center justify-content-center p-2 mr-2" onclick="screenShare()"><!-- Add class d-lg-flex -->
               <svg>
-                <use href="asssets/icons/sprite.svg#icon-airplay"></use>
+                <use href="../asssets/icons/sprite.svg#icon-airplay"></use>
               </svg>
               <svg>
-                <use href="asssets/icons/sprite.svg#icon-airplay"></use>
+                <use href="../asssets/icons/sprite.svg#icon-airplay"></use>
               </svg>
             </li>
-
-            <li class="video-navitem call d-flex align-items-center justify-content-center p-2 mr-2" onclick="redirect()">
+            <!-- <li class="video-navitem active d-flex align-items-center justify-content-center p-2 mr-2" type="button" data-toggle="modal" data-target="#fileModal" onclick="fetchFiles()">
               <svg>
-                <use href="asssets/icons/sprite.svg#icon-call_end"></use>
+                <use href="../asssets/icons/sprite.svg#icon-list_alt"></use>
               </svg>
               <svg>
-                <use href="asssets/icons/sprite.svg#icon-call_end"></use>
+                <use href="../asssets/icons/sprite.svg#icon-list_alt"></use>
+              </svg>
+            </li> -->
+            <li class="video-navitem call d-flex align-items-center justify-content-center p-2 mr-2" onclick="redirect()">
+              <svg>
+                <use href="../asssets/icons/sprite.svg#icon-call_end"></use>
+              </svg>
+              <svg>
+                <use href="../asssets/icons/sprite.svg#icon-call_end"></use>
               </svg>
             </li>
           </ul>
@@ -173,7 +171,8 @@ function initializeSession() {
       height: '100%'
     }, handleError);
   });
-  
+
+
   // Create a publisher
   publisher = OT.initPublisher('publisher', {
     insertMode: 'append',
@@ -181,10 +180,6 @@ function initializeSession() {
     height: '100%'
   }, handleError);
   // Connect to the session
-
-
-  
- 
   session.connect(token, function(error) {
     // If the connection is successful, initialize a publisher and publish to the session
     if (error) {
@@ -194,7 +189,5 @@ function initializeSession() {
     }
   });
 }
-
-
 </script>
-<script src="asssets/js/video.js"></script>
+<script src="../asssets/js/video.js"></script>

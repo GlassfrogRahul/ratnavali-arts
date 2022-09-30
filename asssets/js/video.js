@@ -16,6 +16,13 @@ const toggleCamera = function(){
     publisher.publishVideo(!active);
 } 
 
+const switchCamera=function(){
+    publisher.cycleVideo().then(
+       
+    );
+  }
+
+
 
 //file coding
 
