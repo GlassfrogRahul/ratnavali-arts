@@ -29,12 +29,12 @@
             <div class="container-lg">
                 <h1 class="h2 text-normal text-center -u-color-brown mb-4">Get in touch</h1>
                 <p class="col-xl-5 col-lg-6 mx-auto mb-5 text-center">To inquire, please fill out the form below and our customer service team will contact you.</p>
-                <form action="#" class="row">
+                <form method="POST" class="row">
                     <div class="col-md-6 mb-5">
-                        <input type="text" name="first-name" id="first-name" placeholder="FIRST NAME*" required>
+                        <input type="text" name="first_name" id="first_name" placeholder="FIRST NAME*" required>
                     </div>
                     <div class="col-md-6 mb-5">
-                        <input type="text" name="last-name" id="last-name" placeholder="LAST NAME*" required>
+                        <input type="text" name="last_name" id="last_name" placeholder="LAST NAME*" required>
                     </div>
                     <div class="col-md-6 mb-5">
                         <input type="number" name="phone" id="phone" placeholder="CONTACT NUMBER*" required>
@@ -43,7 +43,7 @@
                         <input type="email" name="email" id="email" placeholder="EMAIL*" required>
                     </div>
                     <div class="col-12 mb-5">
-                        <textarea name="message" id="message" rows="5" placeholder="MESSAGE*"></textarea>
+                        <textarea name="message" id="message" rows="5" placeholder="MESSAGE*" required></textarea>
                     </div>
                     <div class="col-12 d-flex align-items-center justify-content-center">
                         <button type="submit">SUBMIT AN ENQUIRY</button>
@@ -95,3 +95,27 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="./js/custom.js"></script>
 </html>
+
+
+<?php
+    if(isset($_POST) && isset($_POST['first_name'])) {
+        $first_name = $_POST['first_name'];
+        $last_name = $_POST['last_name'];
+        $phone = $_POST['phone'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        
+        $query = "INSERT INTO `contact_form`( `first_name`, `last_name`, `phone`, `email`, `message`) VALUES ('$first_name','$last_name','$phone','$email','$message')";
+        $query_exec = mysqli_query($conn, $query);
+
+        if($query_exec) {
+            ?>
+                <script>
+                    showModal('Form successfully submited!', 'Success');
+                </script>
+            <?php
+        }
+
+    }
+
+?>
