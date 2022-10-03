@@ -97,7 +97,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.php">Contact</a>
                     </li>
-                    <li class="nav-item -u-bg-brown mt-5 mt-lg-0">
+                    <li class="nav-item mt-5 mt-lg-0">
                         <a class="btn mb-0 px-4 py-2" style="font-size: 1.4rem;color: #fff;border: 0;" href="video-call.php">Book Appointment</a>
                     </li>
 

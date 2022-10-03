@@ -78,8 +78,8 @@
                         <a class="nav-link" href="contact.php">Contact</a>
                     </li>
 
-                    <li class="nav-item -u-bg-brown mt-5 mt-lg-0">
-                        <a class="btn" href="video-call.php">Book Appointment</a>
+                    <li class="nav-item mt-5 mt-lg-0">
+                        <a class="btn -u-bg-brown" href="video-call.php">Book Appointment</a>
                     </li>
 
                     <?php
@@ -99,7 +99,7 @@
                             <?php
                         }else{
                             ?>
-                                <a href="./login.php" class="btn login-button -u-bg-brown d-flex align-items-center ">
+                                <a href="./login.php" class="btn login-button -u-bg-brown d-none d-lg-flex align-items-center ">
                                     <span>Login</span>
                                     <svg width="25" height="25">
                                         <use href="./asssets/svg/sprite.svg#icon-log-in"></use>
