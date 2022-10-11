@@ -153,7 +153,7 @@
                         <img src="./asssets/images/women-empowerment.png" width="100%" height="400" alt="">
                     </div>
                     <div class="col-md-6">
-                        <a href="#"><span>WOMEN EMPOWEMENT</span></a>
+                        <a href="#"><span>WOMEN EMPOWERMENT</span></a>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="#"><span>HOMEPAGE</span></a>
+                        <a href="index.php"><span>HOMEPAGE</span></a>
                     </div>
                     <div class="col-md-6 position-relative">
                         <img src="./asssets/images/homepage.png" width="100%" height="400" alt="">
@@ -186,7 +186,7 @@
                         <img src="./asssets/images/contact.png" width="100%" height="400" alt="">
                     </div>
                     <div class="col-md-6">
-                        <a href="#"><span>CONTACT</span></a>
+                        <a href="contact.php"><span>CONTACT</span></a>
                     </div>
                 </div>
             </div>

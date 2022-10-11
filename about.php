@@ -68,7 +68,7 @@
                         <div class="card card-text d-flex flex-column align-items-center">
                             <img src="./asssets/images/monogram.png" class="mb-3" width="30" height="30" alt="Monogram Logo">
                             <h2 class="mb-5">FAMILY</h2>
-                            <p>The legacy of Mr Ajay Sharma now lives with his wife Mrs Chanchal Sharma and children Aniket, Yashvi, and Sakshi, and with the support of his son-like nephew Mr Anil Sharma. Now together we will take this business to a new level. We promise that our quality and your experience will be amazing.  We welcome you to look at the jewelry as we do, beautiful, experimental & novel.  To provide our customers with the best quality service, we have gathered a team of passionate experts and innovators who are dedicated to their work. </p>
+                            <p>The legacy of Mr Ajay Sharma now lives with his wife, Mrs Chanchal Sharma and children Aniket, Yashvi, and Sakshi, and with the support of his son-like nephew Mr Anil Sharma. Now together we will take this business to a new level. We promise that our quality and your experience will be amazing.  We welcome you to look at the jewelry as we do, beautiful, experimental & novel.  To provide our customers with the best quality service, we have gathered a team of passionate experts and innovators who are dedicated to their work. </p>
                             <p>As our company is on the path where everything is done in-house, from stone-cutting to designing to manufacturing to quality control and fulfilment. We cannot wait to share our world with you, a future that looks inclusive, where we support the women in the community, leading to their empowerment to our conscious steps towards conserving the environment & our experiences with making jewellery accessible digitally through our online market and soon: metaverse. </p>
                         </div>
                     </div>
@@ -124,7 +124,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="#"><span>HOMEPAGE</span></a>
+                        <a href="index.php"><span>HOMEPAGE</span></a>
                     </div>
                     <div class="col-md-6 position-relative">
                         <img src="./asssets/images/homepage.png" width="100%" height="400" alt="">
@@ -141,7 +141,7 @@
                         <img src="./asssets/images/contact.png" width="100%" height="400" alt="">
                     </div>
                     <div class="col-md-6">
-                        <a href="#"><span>CONTACT</span></a>
+                        <a href="contact.php"><span>CONTACT</span></a>
                     </div>
                 </div>
             </div>

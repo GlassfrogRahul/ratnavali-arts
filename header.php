@@ -89,7 +89,7 @@
                         <a class="nav-link" href="about.php">About <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="craftmanship.php">Craftmanship</a>
+                        <a class="nav-link" href="craftmanship.php">Craftsmanship</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="women-empowerment.php">Women Empowerment</a>

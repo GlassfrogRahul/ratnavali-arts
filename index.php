@@ -119,7 +119,9 @@
 
         <!--Home Video Section-->
         <section class="home-video_section">
-            <video src="./asssets/video/video-ratnavali.mp4" autoplay playsinline muted="true" loop height="auto" width="100%"></video>
+            <video class="d-none d-md-block" src="./asssets/video/hv_1.mp4" autoplay playsinline muted="true" loop height="auto" width="100%"></video>
+            <video class="d-block d-md-none" src="./asssets/video/hv_2.mp4" autoplay playsinline muted="true" loop height="auto" width="100%"></video>
+
         </section><!--End Home Video Section-->
 
         <!--Service Section-->
