@@ -69,7 +69,7 @@
                         <a class="nav-link" href="about.php">About <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="craftmanship.php">Craftmanship</a>
+                        <a class="nav-link" href="craftmanship.php">Craftsmanship</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="women-empowerment.php">Women Empowerment</a>
@@ -133,7 +133,7 @@
                     <div class="col-lg-4 col-md-6 ">
                         <div class="service-card mr-xl-auto ml-auto mr-auto">
                             <img src="./asssets/images/card-designing.png" loading="lazy" width="100%" height="auto" alt="">
-                            <h3>CARD DESIGNING</h3>
+                            <h3>CAD DESIGNING</h3>
                         </div>
                         
                     </div>
@@ -172,6 +172,8 @@
         </section><!--End Service Section-->
 
     </main>
+
+    <?php include('footer.php'); ?>
     
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

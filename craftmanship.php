@@ -76,7 +76,7 @@
                     <div class="col-lg-5 col-xl-">
                         <div class="card card-text d-flex flex-column align-items-center text-center">
                             <img src="./asssets/images/monogram.png" class="mb-3" width="30" height="30" alt="Monogram Logo">
-                            <h3 class="mb-5 text-normal h2 -u-color-brown">FAMILY</h3>
+                            <h3 class="mb-5 text-normal h2 -u-color-brown">JEWELRY MANUFACTURING</h3>
                             <p>At Ratnavali Arts, we create pieces with artful decorative details. We are the whole company that starts working from scratch and making a product live.</p>
                             <p>We are a jewelry manufacturing company that makes every product from the heart and guarantees that it is of the best quality. </p>
                             <p>We work with brands and their designers to bring their products to market, efficiently, and of the highest quality. </p>
@@ -120,11 +120,9 @@
                     <div class="col-lg-5 col-xl-">
                         <div class="card card-text d-flex flex-column align-items-center text-center">
                             <img src="./asssets/images/monogram.png" class="mb-3" width="30" height="30" alt="Monogram Logo">
-                            <h3 class="h2 mb-5 text-normal -u-color-brown">FAMILY</h3>
-                            <p>At Ratnavali Arts, we create pieces with artful decorative details. We are the whole company that starts working from scratch and making a product live.</p>
-                            <p>We are a jewelry manufacturing company that makes every product from the heart and guarantees that it is of the best quality. </p>
-                            <p>We work with brands and their designers to bring their products to market, efficiently, and of the highest quality. </p>
-                            <p>Much of the fame and success of the company can be attributed to the extremely skilled set of artisans who have been working with Ratnavali Arts for many years.</p>
+                            <h3 class="h2 mb-5 text-normal -u-color-brown">STONE MANUFACTURING</h3>
+                            <p>Some of the world's  prestigious jewelry houses trust Ratnavali to polish  and transform stones. We find out the rough and select its part from where to take a stone out after selecting the area and marking it we start cutting a stone a go further with polishing.</p>
+                            <p>In order to produce the best gems, we always search for the best material because it is our gems' rare beauty and unique quality that often times attracts customers. It inspires us to create our most spectacular pieces</p>
                         </div>
                     </div>
                 </div>
@@ -132,7 +130,7 @@
         </section><!--End Card Text Box-->
 
         <!--Two Column-->
-        <section class="two-column mt-5">
+        <section class="two-column mt-5 d-none">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
@@ -146,14 +144,14 @@
         </section><!--End Two Column-->
 
         <!--Two Column-->
-        <section class="two-column">
+        <section class="two-column d-none">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 position-relative">
                         <img src="./asssets/images/women-empowerment.png" width="100%" height="400" alt="">
                     </div>
                     <div class="col-md-6">
-                        <a href="#"><span>WOMEN EMPOWERMENT</span></a>
+                        <a href="./women-empowerment.php"><span>WOMEN EMPOWERMENT</span></a>
                     </div>
                 </div>
             </div>

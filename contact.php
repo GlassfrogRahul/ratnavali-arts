@@ -75,13 +75,13 @@
 
                     <div class="col-lg-4 col-md-6 text-center d-flex flex-column align-items-center">
                         <h3 class="mb-3">SOCIAL LINK</h3>
-                        <a href="#">SOCIAL LINK 1</a>
-                        <a href="#">SOCIAL LINK 2</a>
-                        <a href="#">SOCIAL LINK 3</a>
+                        <a href="https://www.instagram.com/ratnavali.arts/">Instagram</a>
+                        <a href="https://www.facebook.com/ratnavaliartsjewellers.jaipur/">Facebook</a>
+                        <a href="https://www.linkedin.com/in/ratnavali-arts-a46408178/">Linkedin</a>
 
                     </div>
                 </div>
-                <img src="./asssets/images/about-banner.png" width="100%" height="auto" alt="">
+                <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=322,%20Opposite%20Jaidurga%20School,%20Mount%20Road,%20Jaipur-%20302002&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             </div>
         </section><!--End Contact-->
 

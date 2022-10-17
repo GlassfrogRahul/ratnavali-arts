@@ -69,11 +69,10 @@
                     <div class="col-lg-5 col-xl-">
                         <div class="card card-text d-flex flex-column align-items-center text-center">
                             <img src="./asssets/images/monogram.png" class="mb-3" width="30" height="30" alt="Monogram Logo">
-                            <h3 class="mb-5 text-normal h2 -u-color-brown">FAMILY</h3>
-                            <p>At Ratnavali Arts, we create pieces with artful decorative details. We are the whole company that starts working from scratch and making a product live.</p>
-                            <p>We are a jewelry manufacturing company that makes every product from the heart and guarantees that it is of the best quality. </p>
-                            <p>We work with brands and their designers to bring their products to market, efficiently, and of the highest quality. </p>
-                            <p>Much of the fame and success of the company can be attributed to the extremely skilled set of artisans who have been working with Ratnavali Arts for many years.</p>
+                            <h3 class="mb-5 text-normal h2 -u-color-brown">WOMEN ARTISANS</h3>
+                            <p>Women are nurtured by nature. They fulfil various responsibilities every day, be it of a mother, a wife, a daughter or a daughter-in-law. </p>
+                            <p>Our women artisans are a part of our business where they sole handedly handle thread collection and working with full dedication. </p>
+                            <p>Our ladies are amazing learners and have made impressive progress. Not only some products are made but our women artist has completed thousands of orders of thread pieces. Not only thread collection, our women artisans are working in jewellery manufacturing also.</p>
                         </div>
                     </div>
                 </div>

@@ -83,7 +83,7 @@
 
         <!--Banner-->
         <section class="banner">
-            <img src="./asssets/images/achivements.png" width="100%" height="auto" alt="Process Image">
+            <img src="./asssets/images/fam.jpg" width="100%" height="auto" alt="Process Image">
         </section><!--End Banner-->
 
         <!--Two Column-->
@@ -105,7 +105,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 position-relative mx">
-                        <img src="./asssets/images/lifetime-member.png" width="100%" height="400" alt="">
+                        <img src="./asssets/images/r-arts.jpg" width="100%" height="400" alt="">
                     </div>
                     <div class="col-md-6">
                         <p>Lifetime Member of Jewellers Association Jaipur, with the help of them we exhibit our products worldwide.</p>
