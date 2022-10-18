@@ -66,7 +66,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 text-center d-flex flex-column align-items-center">
                         <h3 class="mb-3">CONTACT</h3>
-                        <a href="tel:+918058888990">+918058888990</a>
+                        <a href="tel:+918058888991">+918058888991</a>
                         <a href="tel:+919928159664">+919928159664</a>
                         <a href="mailto:ratnavali_arts@yahoo.co.in">ratnavali_arts@yahoo.co.in</a>
                         <a href="mailto:officeratnavaliarts@gmail.com">officeratnavaliarts@gmail.com</a>

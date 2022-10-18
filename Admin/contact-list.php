@@ -1,10 +1,10 @@
 <?php
 require("../config.php");
-require("class/Admin.php");
+require("class/Contacts.php");
 session_start();
-$admin=new Admin($conn);
+$contacts=new Contacts($conn);
 
-$data=json_decode($admin->callsData(),true);
+$data=json_decode($contacts->callsData(),true);
 $data=$data['data'];
 
 if(!isset($_SESSION['user_id'])){
@@ -117,19 +117,23 @@ header("Location: index.php");
                       <thead>
                         <tr>
                             <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Message</th>
                             <th>Date</th>
-                            <th>Time</th>
-                            <th>Action</th>
+
                         </tr>
                       </thead>
                       <tbody>
                         <?php                       
                         for($i=0;$i<sizeof($data);$i++){ ?>
                         <tr>
-                         <td><?= $data[$i]['name'] ?></td>
-                         <td><?= $data[$i]['date'] ?></td>
-                         <td><?= $data[$i]['time'] ?></td>
-                         <td><a href='video-room.php?r=<?= $data[$i]['slot_id'] ?>' class="btn btn-primary">Join</a></td>
+                         <td><?= $data[$i]['first_name'] ?> <?= $data[$i]['last_name'] ?></td>
+                         <td><?= $data[$i]['phone'] ?></td>
+                         <td><?= $data[$i]['email'] ?></td>
+                         <td><?= $data[$i]['message'] ?></td>
+                         <td><?= $data[$i]['created_at'] ?></td>
+
                         </tr>
                      <?php   }
                         ?>

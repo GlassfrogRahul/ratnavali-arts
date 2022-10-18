@@ -13,7 +13,7 @@
             </li>
             <li class="footer-top-item">
                 <img src="./asssets/svg/call.svg" width="30" height="30" alt="">
-                <a href="tel:+918058888990">+91-8058888990</a>
+                <a href="tel:+918058888991">+91-8058888991</a>
                 <a href="tel:+919928159664">+91-9928159664</a>
             </li>
             <li class="footer-top-item">
@@ -24,10 +24,10 @@
         </ul>
     </div>
     <div class="container">
-        <ul class="footer-nav-list">
+        <ul class="footer-nav-list d-none">
             <li class="footer-nav-item"><a href="#" class="footer-nav-link">Privacy Policy</a></li>
             <li class="footer-nav-item"><a href="#" class="footer-nav-link">Terms & Condition</a></li>
         </ul>
-        <p class="text-center u-color-brown">Copyrights &copy;</p>
+        <p class="text-center u-color-brown mt-5">Copyrights &copy; Ratnavali Arts Pvt. Ltd.</p>
     </div>
 </footer>
