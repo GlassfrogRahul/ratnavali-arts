@@ -31,3 +31,12 @@
         <p class="text-center u-color-brown mt-5">Copyrights &copy; Ratnavali Arts Pvt. Ltd.</p>
     </div>
 </footer>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-53WENEVXFV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-53WENEVXFV');
+</script>

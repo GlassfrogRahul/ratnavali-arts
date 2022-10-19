@@ -10,7 +10,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords"
+        content="best jewellery, Gemstone Jewellery, earrings, men bracelet, gemestone, jaipur jewellery wholesale online, jewellery wholesaler in jaipur, jaipur jewellery wholesale, jaipuri jewellery wholesale, designer jewelry online, wholesale jewellery in jaipur, ad jewellery manufacturers in jaipur, jewellery manufacturers in jaipur, jewellery manufacturers, rajasthan jewellery wholesale, rajasthani jewellery manufacturers, jewellery manufacturers jaipur rajasthan, designer jewellery wholesale, imitation jewellery wholesalers in jaipur, jaipur gold jewellery designs, jaipuri jewellery online shopping, jaipur jewellery online, jaipuri jewellery online, imitation jewellery manufacturers in jaipur, jewellery company in jaipur, best jewellery shop in jaipur, jaipur art jewellery, jaipur gold jewellery, jewellery showrooms in jaipur, jaipur jewellery online shopping, jaipur gold jewellery online shopping, jewellery shop in jaipur, famous jewellery shops in jaipur, jaipur top jewellers, rajasthan jewellery shop, jewellery shops in jaipur india, best jewellers in jaipur, jewellery designers in jaipur, jewellery shopping in jaipur, famous jewellers in jaipur, jaipur stone jewellery online, top jewellers in jaipur, jewellery store in jaipur." />
+        <meta name="description" content="Ratnawali Arts - Exclusive wedding jewelry brands with a perfect finish and high purity. Explore Unique Designs of Gold, silver, and gemestone Jewelries.">  
+
+        <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
