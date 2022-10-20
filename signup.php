@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign up - Ratnavali Arts</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +52,7 @@
                             </div>
 
                             <div class="col-md-10 col-lg-10 mb-5">
-                                <label for="email">Email*</label>
+                                <label for="email">Country*</label>
                                 <select name="country" id="country">
                                     <?php
                                         $country_query = "SELECT `country_id`, `country_name`, `country_code` FROM `countries`";

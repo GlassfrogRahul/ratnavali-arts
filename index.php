@@ -17,7 +17,7 @@
         content="Ratnavali Arts – Buy Gold &amp; Silver Jewellery, Gemestone figures online from 7000+ attractive jewel designs and latest collections at best price.Visit our website to know more about today’s discounts, nearest retail store etc." />
 
 
-    <title>Ratnawali Arts – Online Gold &amp; Silver Jewellery Shopping Store</title>
+    <title>Ratnavali Arts – Online Gold &amp; Silver Jewellery Shopping Store</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
