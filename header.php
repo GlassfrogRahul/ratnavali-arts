@@ -95,10 +95,16 @@
                         <a class="nav-link" href="women-empowerment.php">Women Empowerment</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://blogs.ratnavaliarts.com">Blogs</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="contact.php">Contact</a>
                     </li>
+                    <li class="nav-item align-self-stretch">
+                        <div id="google_translate_element"></div>
+                    </li>
                     <li class="nav-item mt-5 mt-lg-0">
-                        <a class="btn mb-0 px-4 py-2" style="font-size: 1.4rem;color: #fff;border: 0;" href="video-call.php">Book Appointment</a>
+                        <a class="btn mb-0 px-4 py-2" style="font-size: 1.4rem;color: #fff;border: 0;" href="book-appointment.php">Book Appointment</a>
                     </li>
 
                 </ul>

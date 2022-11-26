@@ -3,6 +3,9 @@ require("../config.php");
 require("class/Contacts.php");
 session_start();
 $contacts=new Contacts($conn);
+if(isset($_POST) && isset($_POST['id'])) {
+  $delete_contact = $contacts->deleteContact($_POST['id']);
+}
 
 $data=json_decode($contacts->callsData(),true);
 $data=$data['data'];
@@ -121,6 +124,7 @@ header("Location: index.php");
                             <th>Email</th>
                             <th>Message</th>
                             <th>Date</th>
+                            <td>Action</td>
 
                         </tr>
                       </thead>
@@ -133,6 +137,12 @@ header("Location: index.php");
                          <td><?= $data[$i]['email'] ?></td>
                          <td><?= $data[$i]['message'] ?></td>
                          <td><?= $data[$i]['created_at'] ?></td>
+                         <td>
+                          <form action="#" method="POST">
+                            <input type="hidden" name="id" value="<?= $data[$i]['id'] ?>" >
+                            <button class="btn btn-sm btn-danger text-light">Delete</button>
+                          </form>
+                         </td>
 
                         </tr>
                      <?php   }
@@ -194,4 +204,14 @@ header("Location: index.php");
 </body>
 
 </html>
+
+<?php
+  if($delete_contact) {
+    ?>
+      <script>
+        alert("Contact successfully deleted");
+      </script>
+    <?php
+  }
+?>
 

@@ -18,6 +18,10 @@ Class Contacts extends Query{
      return $this->select("SELECT * FROM `admins` WHERE email='".$post['email']."'  AND password='".$post['password']."'" );       
     } //Login
 
+    public function deleteContact($id) {
+      return $this->delete("DELETE from `contact_form` WHERE `id`='$id'");
+    }
+
 }
 
 

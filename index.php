@@ -1,6 +1,7 @@
 <?php
     require_once('config.php');
     require_once('authentication.php');
+    require_once('device.php');
 
 ?>
 
@@ -74,30 +75,42 @@
             </div>
 
 
-            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse ml-auto pl-4 pl-lg-0" id="navbarSupportedContent">
                 <ul class="navbar-nav align-items-center">
-                    <li class="nav-item d-lg-none d-flex align-items-center justify-content-center"
+                    <li class="nav-item align-self-stretch d-lg-none d-flex align-items-center justify-content-center"
                         data-toggle="collapse" onclick="toggleNavbar()">
                         <img src="./asssets/images/menu-logo.png" width="35" height="35" alt="Menu Logo">
                         <span>MENU</span>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item align-self-stretch">
                         <a class="nav-link" href="about.php">About <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item align-self-stretch">
                         <a class="nav-link" href="craftmanship.php">Craftsmanship</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item align-self-stretch">
                         <a class="nav-link" href="women-empowerment.php">Women Empowerment</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item align-self-stretch">
+                        <a class="nav-link" target="_blank" href="https://blogs.ratnavaliarts.com">Blogs</a>
+                    </li>
+                    <li class="nav-item align-self-stretch">
                         <a class="nav-link" href="contact.php">Contact</a>
                     </li>
 
-                    <li class="nav-item mt-5 mt-lg-0">
+                    <li class="nav-item align-self-stretch mt-5 mt-lg-0 d-none d-lg-flex">
                         <a class="btn -u-bg-brown" href="video-call.php">Book Appointment</a>
                     </li>
+
+                    <li class="nav-item align-self-stretch mt-0 mt-lg-0">
+                        <div id="google_translate_element"></div>
+                    </li>
+
+                    <li class="nav-item align-self-stretch mt-5 mt-lg-0 d-flex d-lg-none">
+                        <a class="btn -u-bg-brown" href="video-call.php">Book Appointment</a>
+                    </li>
+                    
 
                     <?php
                         if(isset($user)) {
@@ -137,10 +150,22 @@
 
         <!--Home Video Section-->
         <section class="home-video_section">
-            <video class="d-none d-md-block" src="./asssets/video/hv_1.mp4" autoplay playsinline muted="true" loop
+            <?php
+                if($isMob) {
+                    ?>
+                        <video preload="none" src="./asssets/video/hv_2.mp4" autoplay="true" playsinline="true" muted loop
                 height="auto" width="100%"></video>
-            <video class="d-block d-md-none" src="./asssets/video/hv_2.mp4" autoplay playsinline muted="true" loop
+                    <?php
+                }
+                else{
+                    ?>
+                        <video preload="none" src="./asssets/video/hv_1.mp4" autoplay="true" playsinline="true" muted loop
                 height="auto" width="100%"></video>
+                    <?php
+                }
+            ?>
+            
+            
 
         </section>
         <!--End Home Video Section-->

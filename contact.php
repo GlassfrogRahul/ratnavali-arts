@@ -32,7 +32,7 @@
             
             <div class="container-lg">
                 <h1 class="h2 text-normal text-center -u-color-brown mb-4">Get in touch</h1>
-                <p class="col-xl-5 col-lg-6 mx-auto mb-5 text-center">To inquire, please fill out the form below and our customer service team will contact you.</p>
+                <p class="col-xl-5 col-lg-6 mx-auto mb-5 text-center">To enquire, please fill out the form below and our customer service team will contact you.</p>
                 <form method="POST" class="row">
                     <div class="col-md-6 mb-5">
                         <input type="text" name="first_name" id="first_name" placeholder="FIRST NAME*" required>
@@ -70,8 +70,8 @@
                     </div>
                     <div class="col-lg-4 col-md-6 text-center d-flex flex-column align-items-center">
                         <h3 class="mb-3">CONTACT</h3>
-                        <a href="tel:+918058888991">+918058888991</a>
-                        <a href="tel:+919928159664">+919928159664</a>
+                        <a href="tel:+918058888991">+91-8058888991</a>
+                        <a href="tel:+919928159664">+91-9928159664</a>
                         <a href="mailto:ratnavali_arts@yahoo.co.in">ratnavali_arts@yahoo.co.in</a>
                         <a href="mailto:officeratnavaliarts@gmail.com">officeratnavaliarts@gmail.com</a>
 
@@ -110,7 +110,7 @@
         $message = $_POST['message'];
         
         $query = "INSERT INTO `contact_form`( `first_name`, `last_name`, `phone`, `email`, `message`) VALUES ('$first_name','$last_name','$phone','$email','$message')";
-        $query_exec = mysqli_query($conn, $query);
+        $query_exec = $first_name == $last_name ? true : mysqli_query($conn, $query);
 
         if($query_exec) {
             ?>

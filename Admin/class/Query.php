@@ -20,5 +20,10 @@ Class Query{
         return json_encode(["rows"=>$rows,"data"=>$array],false);
     }//select _query
 
+    public function delete($qu) {
+      $query_exec = mysqli_query($this->conn, $qu);
+      return $query_exec;
+    }
+
 }
 ?>

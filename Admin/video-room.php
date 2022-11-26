@@ -56,8 +56,8 @@ body{
           <div class="imagebox d-none"><!-- Remove class d-none -->
             <img src="https://images.unsplash.com/photo-1644347542604-2ae09ac7f24a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="">
           </div>
-          <video id="remoteVideo" playsinline autoplay muted class="d-none"></video> <!-- Remove class d-none -->
-          <audio id="remoteAudio" autoplay playsinline></audio>
+          <video preload="none" id="remoteVideo" playsinline="true" autoplay="true" muted class="d-none"></video> <!-- Remove class d-none -->
+          <audio id="remoteAudio" autoplay="true" playsinline="true"></audio>
           <div class="client-mic align-items-center justify-content-center d-none"><!-- Remove class d-none and add class d-flex -->
             <svg>
               <use href="{{asset('css/sprite.svg')}}#icon-mic"></use>
@@ -72,11 +72,11 @@ body{
             <img src="https://images.unsplash.com/photo-1644347542604-2ae09ac7f24a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="">
           </div>
           <p class="name d-none">You</p><!-- Remove class d-none -->
-          <video id="localVideo" playsinline autoplay muted class="d-none"></video><!-- Remove class d-none -->
+          <video preload="none" id="localVideo" playsinline="true" autoplay="true" muted class="d-none"></video><!-- Remove class d-none -->
         </div>
 
         <div class="screen">
-          <video id="screenVideo" playsinline autoplay muted></video>
+          <video preload="none" id="screenVideo" playsinline="true" autoplay="true" muted></video>
           <div class="overlay-screen d-flex justify-content-center align-items-center">
             <h6>You are sharing!</h6>
           </div>

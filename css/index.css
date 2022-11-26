@@ -216,7 +216,7 @@ li {
             color: #A88A5F;
             font-weight: 500; }
         .home-navbar.navbar.navbar-expand-lg .container-lg .navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           text-transform: uppercase;
           color: #fff;
           padding: 0; }
@@ -474,7 +474,7 @@ body.page.home .home-video_section {
     z-index: 3; }
   body.page.home .home-video_section video {
     position: relative;
-    z-index: 2;
+    z-index: 10;
     min-height: 100vh;
     object-fit: cover; }
 

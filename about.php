@@ -61,7 +61,7 @@
 
         <!--Banner-->
         <section class="banner">
-            <img src="./asssets/images/about-banner.png" width="100%" height="auto" alt="Process Image">
+            <img src="./asssets/images/fam.jpg" width="100%" height="auto" alt="Process Image">
         </section><!--End Banner-->
 
         <!--Card Text Box-->
@@ -87,7 +87,7 @@
 
         <!--Banner-->
         <section class="banner">
-            <img src="./asssets/images/fam.jpg" width="100%" height="auto" alt="Process Image">
+            <img src="./asssets/images/achivements.png" width="100%" height="auto" alt="Process Image">
         </section><!--End Banner-->
 
         <!--Two Column-->
