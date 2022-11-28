@@ -13,12 +13,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
-        content="best jewellery, Gemstone Jewellery, earrings, men bracelet, gemestone, jaipur jewellery wholesale online, jewellery wholesaler in jaipur, jaipur jewellery wholesale, jaipuri jewellery wholesale, designer jewelry online, wholesale jewellery in jaipur, ad jewellery manufacturers in jaipur, jewellery manufacturers in jaipur, jewellery manufacturers, rajasthan jewellery wholesale, rajasthani jewellery manufacturers, jewellery manufacturers jaipur rajasthan, designer jewellery wholesale, imitation jewellery wholesalers in jaipur, jaipur gold jewellery designs, jaipuri jewellery online shopping, jaipur jewellery online, jaipuri jewellery online, imitation jewellery manufacturers in jaipur, jewellery company in jaipur, best jewellery shop in jaipur, jaipur art jewellery, jaipur gold jewellery, jewellery showrooms in jaipur, jaipur jewellery online shopping, jaipur gold jewellery online shopping, jewellery shop in jaipur, famous jewellery shops in jaipur, jaipur top jewellers, rajasthan jewellery shop, jewellery shops in jaipur india, best jewellers in jaipur, jewellery designers in jaipur, jewellery shopping in jaipur, famous jewellers in jaipur, jaipur stone jewellery online, top jewellers in jaipur, jewellery store in jaipur." />
+        content="Jewellery Manufacturer,  Jewelry Manufacturer from Jaipur,  Silver Jewellery Manufacturer,  Gold Jewellery Manufacturer,  Designer Jewelry Manufacturer,  Gemstone Jewellery Manufacturer Gemstone Jewellery Manufacturer Jaipur, Gold Jewellery Wholesale" />
     <meta name="description"
-        content="Ratnavali Arts – Buy Gold &amp; Silver Jewellery, Gemestone figures online from 7000+ attractive jewel designs and latest collections at best price.Visit our website to know more about today’s discounts, nearest retail store etc." />
+        content="Ratnavali Arts – #1 Gold, Silver & Gemstone Jewellery manufacturer in Jaipur. We are premium Jewellery makers in Jaipur having widest range of attractive jewel designs and latest collections at best price. Visit our website for finest Wholesale Fashion Jewelry Manufacturer in Jaipur." />
 
 
-    <title>Ratnavali Arts – Online Gold &amp; Silver Jewellery Shopping Store</title>
+    <title>Ratnavali Arts – Gold, Silver & Gemstone Jewellery Manufacturer in Jaipur</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">

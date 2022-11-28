@@ -10,7 +10,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Call - Ratnavali Arts</title>
+    <meta name="keywords"
+        content="Jewellery Manufacturer,  Jewelry Manufacturer from Jaipur,  Silver Jewellery Manufacturer,  Gold Jewellery Manufacturer,  Designer Jewelry Manufacturer,  Gemstone Jewellery Manufacturer Gemstone Jewellery Manufacturer Jaipur, Gold Jewellery Wholesale" />
+    <meta name="description"
+        content="At Ratnavaliarts.com, We are providing the video call option where you can come and visit our whole manufacturing unit." />
+    <title>Ratnavali Arts - Video Call Available With Us</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
