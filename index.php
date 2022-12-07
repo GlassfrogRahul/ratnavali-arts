@@ -9,6 +9,7 @@
 <html lang="en">
 
 <head>
+<link rel="canonical" href="https://www.ratnavaliarts.com/" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +28,37 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+
+    <meta property="og:url" content="https://www.ratnavaliarts.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ratnavali Arts – Gold, Silver & Gemstone Jewellery Manufacturer in Jaipur">
+<meta property="og:description" content="Ratnavali Arts – #1 Gold, Silver & Gemstone Jewellery manufacturer in Jaipur. We are premium Jewellery makers in Jaipur having widest range of attractive jewel designs and latest collections at best price. Visit our website for finest Wholesale Fashion Jewelry Manufacturer in Jaipur.">
+<meta property="og:image" content="">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="ratnavaliarts.com">
+<meta property="twitter:url" content="https://www.ratnavaliarts.com/">
+<meta name="twitter:title" content="Ratnavali Arts – Gold, Silver & Gemstone Jewellery Manufacturer in Jaipur">
+<meta name="twitter:description" content="Ratnavali Arts – #1 Gold, Silver & Gemstone Jewellery manufacturer in Jaipur. We are premium Jewellery makers in Jaipur having widest range of attractive jewel designs and latest collections at best price. Visit our website for finest Wholesale Fashion Jewelry Manufacturer in Jaipur.">
+<meta name="twitter:image" content="">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Corporation",
+  "name": "Ratnavali Arts",
+  "url": "https://www.ratnavaliarts.com/",
+  "logo": "https://www.ratnavaliarts.com/asssets/svg/logo-white.svg",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-8058888991",
+    "contactType": "sales",
+    "areaServed": "IN",
+    "availableLanguage": ["en","Hindi"]
+  }
+}
+</script>
+
 
 </head>
 
