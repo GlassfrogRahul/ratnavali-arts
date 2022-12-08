@@ -15,11 +15,28 @@
         <meta name="description" content="Ratnavali arts offers best quality gold and silver jewellery with wide varieties of collections. Buy well designed wedding jewellery within affordable prices">
         <meta name="google-site-verification" content="iRdGWjuU5FmEdr2Prk5sA7hxj0Q9lEK3kYkLhDOaP-0" />
     <title>Ratnavali Arts - About Us</title>
+    <link rel="canonical" href="https://www.ratnavaliarts.com/about.php" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+    <!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://www.ratnavaliarts.com/about.php">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ratnavali Arts - About Us">
+<meta property="og:description" content="Ratnavali arts offers best quality gold and silver jewellery with wide varieties of collections. Buy well designed wedding jewellery within affordable prices">
+<meta property="og:image" content="">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="ratnavaliarts.com">
+<meta property="twitter:url" content="https://www.ratnavaliarts.com/about.php">
+<meta name="twitter:title" content="Ratnavali Arts - About Us">
+<meta name="twitter:description" content="Ratnavali arts offers best quality gold and silver jewellery with wide varieties of collections. Buy well designed wedding jewellery within affordable prices">
+<meta name="twitter:image" content="">
+
+    
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4SYZSX3TE"></script>
 <script>

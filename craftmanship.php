@@ -16,25 +16,25 @@
         <meta name="description" content="Ratnavali Arts - Exclusive jewelry with a perfect finish and high purity. Explore Unique Designs of Gold, silver, and gemestone Jewelries at Ratnavaliarts.com">  
         <meta name="google-site-verification" content="iRdGWjuU5FmEdr2Prk5sA7hxj0Q9lEK3kYkLhDOaP-0" />
         <title>Ratnavali Arts - Craftmanship</title>
-        <link rel="canonical" href="https://www.ratnavaliarts.com/" />
+        <link rel="canonical" href="https://www.ratnavaliarts.com/craftmanship.php" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
     <!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://www.ratnavaliarts.com/">
+<meta property="og:url" content="https://www.ratnavaliarts.com/craftmanship.php">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ratnavali Arts – Gold, Silver & Gemstone Jewellery Manufacturer in Jaipur">
-<meta property="og:description" content="Ratnavali Arts – #1 Gold, Silver & Gemstone Jewellery manufacturer in Jaipur. We are premium Jewellery makers in Jaipur having widest range of attractive jewel designs and latest collections at best price. Visit our website for finest Wholesale Fashion Jewelry Manufacturer in Jaipur.">
+<meta property="og:title" content="Ratnavali Arts - Craftmanship">
+<meta property="og:description" content="Ratnavali Arts - Exclusive jewelry with a perfect finish and high purity. Explore Unique Designs of Gold, silver, and gemestone Jewelries at Ratnavaliarts.com">
 <meta property="og:image" content="">
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta property="twitter:domain" content="ratnavaliarts.com">
-<meta property="twitter:url" content="https://www.ratnavaliarts.com/">
-<meta name="twitter:title" content="Ratnavali Arts – Gold, Silver & Gemstone Jewellery Manufacturer in Jaipur">
-<meta name="twitter:description" content="Ratnavali Arts – #1 Gold, Silver & Gemstone Jewellery manufacturer in Jaipur. We are premium Jewellery makers in Jaipur having widest range of attractive jewel designs and latest collections at best price. Visit our website for finest Wholesale Fashion Jewelry Manufacturer in Jaipur.">
+<meta property="twitter:url" content="https://www.ratnavaliarts.com/craftmanship.php">
+<meta name="twitter:title" content="Ratnavali Arts - Craftmanship">
+<meta name="twitter:description" content="Ratnavali Arts - Exclusive jewelry with a perfect finish and high purity. Explore Unique Designs of Gold, silver, and gemestone Jewelries at Ratnavaliarts.com">
 <meta name="twitter:image" content="">
 
     <!-- Google tag (gtag.js) -->
