@@ -18,7 +18,7 @@
     <meta name="description"
         content="Ratnavali Arts – #1 Gold, Silver & Gemstone Jewellery manufacturer in Jaipur. We are premium Jewellery makers in Jaipur having widest range of attractive jewel designs and latest collections at best price. Visit our website for finest Wholesale Fashion Jewelry Manufacturer in Jaipur." />
 
-
+        <meta name="google-site-verification" content="iRdGWjuU5FmEdr2Prk5sA7hxj0Q9lEK3kYkLhDOaP-0" />
     <title>Ratnavali Arts – Gold, Silver & Gemstone Jewellery Manufacturer in Jaipur</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -41,6 +41,15 @@
 <meta name="twitter:title" content="Ratnavali Arts – Gold, Silver & Gemstone Jewellery Manufacturer in Jaipur">
 <meta name="twitter:description" content="Ratnavali Arts – #1 Gold, Silver & Gemstone Jewellery manufacturer in Jaipur. We are premium Jewellery makers in Jaipur having widest range of attractive jewel designs and latest collections at best price. Visit our website for finest Wholesale Fashion Jewelry Manufacturer in Jaipur.">
 <meta name="twitter:image" content="">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J4SYZSX3TE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J4SYZSX3TE');
+</script>
 
 <script type="application/ld+json">
 {
